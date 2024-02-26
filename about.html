@@ -1,0 +1,2372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Hakkımızda | Uber</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: #000000;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            height: 64px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 70px;
+            align-items: center;
+            height: 40px;
+            width: 1408px;
+        }
+
+        .nav-conx {
+            display: flex;
+            gap: 23px;
+        }
+
+        .navbox1 {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .nav-logo {
+            margin-left: 50px;
+            font-size: 24px;
+        }
+
+        .nav-logo a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .novbox2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .butx {
+            color: #ffffff;
+            background-color: transparent;
+            font-size: 14px;
+            padding: 10px 12px;
+            height: 38px;
+            width: 88px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+
+        .but-con i {
+            color: #ffffff;
+        }
+
+        .butx:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+        }
+
+        .novbox3 {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            height: 38px;
+            width: 88px;
+            border: 1px solid black;
+        }
+
+        .novbox3:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+            border-radius: 20px;
+        }
+
+        .novbox3 a {
+            font-size: 14px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .novbox4 {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+        }
+
+        .novbox4:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+            border-radius: 20px;
+        }
+
+        .novbox4 a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .dropbox {
+            width: 192px;
+            height: auto;
+            border: 1px solid rgba(255, 255, 255, 0.126);
+            border-radius: 0px 0px 10px 10px;
+            z-index: 10;
+            position: absolute;
+            background-color: white;
+            display: none;
+            padding-left: 10px;
+            top: 50px;
+        }
+
+        .but-con1:hover .dropbox {
+            display: block;
+        }
+
+        .dropbox form {
+            list-style: none;
+        }
+
+        .dropbox li {
+            padding: 5px;
+        }
+
+        .dropbox li a {
+            text-decoration: none;
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+        }
+
+        .but2 {
+            position: relative;
+        }
+
+        .dropbox1 {
+            width: 239px;
+            height: 258px;
+            border: 1px solid rgba(255, 255, 255, 0.126);
+            border-radius: 0px 0px 0px 10px;
+            background-color: white;
+            padding-left: 10px;
+            position: absolute;
+            top: 35px;
+            right: 0px;
+            overflow-y: scroll;
+            display: none;
+        }
+
+        .but2:hover .dropbox1 {
+            display: block;
+        }
+
+        .dropbox1 form {
+            list-style: none;
+        }
+
+        .dropbox1 li {
+            width: 241px;
+            height: 64px;
+            padding: 20px 20px;
+        }
+
+        .dropbox1 li a {
+            text-decoration: none;
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+        }
+
+        .novbox4 a {
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .navbox5 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .but1 button {
+            width: auto;
+            height: 36px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but1 button span i {
+            margin-right: 5px;
+        }
+
+        .but1 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+        .but2 button {
+            width: auto;
+            height: 36px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but2 button span i {
+            margin-right: 10px;
+        }
+
+        .but2 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+        .but3 button {
+            width: 106px;
+            height: 36px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but3 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+        .but4 button {
+            width: 85.5px;
+            height: 36px;
+            font-size: 13px;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .but4 button:hover {
+            background-color: #ddd;
+        }
+
+        /* HEADER BİTİŞ */
+
+        /* FOOTER BAŞLANGIC  */
+        .footer {
+            width: 100%;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot-con {
+            width: 100%;
+            padding: 128px;
+            padding: 64px;
+        }
+
+        .foot-box1 {
+            width: 100%;
+            height: 112px;
+            display: flex;
+            align-items: center;
+        }
+
+        .foot-box2 {
+            width: 100%;
+            height: 67px;
+        }
+
+        .foot-box3 {
+            width: 100%;
+            display: flex;
+            column-gap: 36px;
+            justify-content: space-between;
+        }
+
+        .foot-box4 {
+            width: 100%;
+            height: 72px;
+            display: flex;
+            padding-right: 200px;
+            margin-top: 36px;
+        }
+
+        .foot-box6 {
+            width: 100%;
+            height: 56px;
+            margin-top: 36px;
+        }
+
+        .fbox1 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox2 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox3 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .foot-hid1 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .foot-hid2 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .fbox4 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox5 {
+            width: 100%;
+            height: 72px;
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .fbox6 {
+            width: 100%;
+            height: 72px;
+            padding: 12px 0;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .fbox6 button {
+            height: 30px;
+            width: 100px;
+            border: 1px solid transparent;
+            background-color: transparent;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .fbox6 button:hover {
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        .fbox7 {
+            display: flex;
+            gap: 10px;
+            margin-top: 36px;
+        }
+
+        .fbox7 a .svg {
+            width: 128px;
+            height: 38;
+        }
+
+        .fbox8 {
+            padding: 12px 0;
+            width: 261px;
+            height: 20px;
+        }
+
+        .fbox8 p {
+            color: #5c5a5a;
+            font-size: 12px;
+        }
+
+        .fbox9 {
+            display: flex;
+            gap: 15px;
+            padding-top: 10px;
+        }
+
+        .fbox9 p a {
+            text-decoration: none;
+            color: #5c5a5a;
+            font-size: 12px;
+        }
+
+        .frenk {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .frenk1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .firsli {
+            margin: 0 0 20px;
+        }
+
+        .foot-box1 a {
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #eee;
+        }
+
+        .foot-box2 a {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #eee;
+        }
+
+        .fbox1 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox2 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox3 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox4 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social1 {
+
+            width: 111.5px;
+            padding-left: 20px;
+        }
+
+        .social1 a {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .fa-solid {
+            padding-right: 5px;
+        }
+
+        /*  */
+        /* FOOTER BİTİŞ */
+        /*  */
+
+        .blog1 {
+            width: 100%;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con1 {
+            width: 1280px;
+            height: 480px;
+            position: relative;
+        }
+
+        .mblog1 {
+            width: 1280px;
+            height: 192px;
+            padding: 64px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .mbox1 {
+            width: 459px;
+            height: 64px;
+        }
+
+        .mbox1 h1 {
+            font-size: 52px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+
+        .blog2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con2 {
+            width: 1280px;
+            height: auto;
+            padding: 64px;
+        }
+
+        .mblog2 {
+            width: 1152px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-1 {
+            width: 756px;
+            height: auto;
+        }
+
+        .bbox-1 h2 {
+            font-size: 36px;
+            color: #333333;
+        }
+
+        .bbox-2 {
+            width: 756px;
+            height: auto;
+        }
+
+        .bbox-2 p {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(98, 95, 95, 0.886);
+            width: 756px;
+            height: auto;
+        }
+
+        .bbox-3 {
+            width: 1152px;
+            height: auto;
+        }
+
+        .hid20 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .blog3 {
+            width: 100%;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con3 {
+            width: 1280px;
+            height: 480px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mblog3 {
+            width: 1152px;
+            height: 284px;
+        }
+
+        .mbox2 {
+            width: 459px;
+            height: 284px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-4 {
+            width: 459px;
+            height: 128px;
+        }
+
+        .bbox-4 h1 {
+            font-size: 52px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+
+        .bbox-5 {
+            width: 459px;
+            height: 48px;
+        }
+
+        .bbox-5 p {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+
+        .bbox-6 {
+            width: 459px;
+            height: 60px;
+        }
+
+        .bbox-6 a {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+        }
+
+        .bbut1 {
+            width: 262px;
+            height: 48px;
+            border: 1px solid black;
+            background-color: #000000;
+            border-radius: 10px;
+            text-align: center;
+            padding: 14px 25px;
+            margin: 12px 0 0;
+        }
+
+        .bbut1:hover {
+            background-color: rgba(0, 0, 0, 0.822);
+        }
+
+        .blog4 {
+            width: 100%;
+            height: 524px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con4 {
+            width: 1280px;
+            height: 524px;
+            padding: 64px;
+        }
+
+        .mblog4 {
+            width: 1152px;
+            height: 396px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bbox-7 {
+            width: 459px;
+            height: 396px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-7 h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-7 p {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbut2 {
+            position: relative;
+        }
+
+        .bbut2 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .hid1 {
+            width: 100px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .bbut2 .hid1::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut2:hover .hid1::before {
+            width: 100px;
+        }
+
+        .blog5 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con5 {
+            width: 1280px;
+            height: 500px;
+            padding: 64px;
+        }
+
+        .mblog5 {
+            width: 1152px;
+            height: 372px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bbox-8 {
+            width: 459px;
+            height: 324px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .hid2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .bbox-8 h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-8 p {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .hid3 {
+            width: 188px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .hid4 {
+            width: 93px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .bbut4 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .bbut5 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .bbut4 {
+            position: relative;
+        }
+
+        .bbut5 {
+            position: relative;
+        }
+
+        .bbut4 .hid3::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut4:hover .hid3::before {
+            width: 188px;
+        }
+
+        .bbut5 .hid4::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut5:hover .hid4::before {
+            width: 93px;
+        }
+
+        .blog6 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con6 {
+            width: 1280px;
+            height: 500px;
+            padding: 64px;
+        }
+
+        .mblog6 {
+            width: 1152px;
+            height: 352px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .bbox-9 {
+            width: 459px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-9 h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+
+        }
+
+        .bbox-9 p {
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbut6 {
+            position: relative;
+        }
+
+        .bbut6 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .hid5 {
+            width: 100px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .bbut6 .hid5::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut6:hover .hid5::before {
+            width: 100px;
+        }
+
+        .blog7 {
+            width: 100%;
+            height: 783.99px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con7 {
+            width: 1280px;
+            height: 783.99px;
+            padding: 64px;
+        }
+
+
+        .mblog7 {
+            width: 1152px;
+            height: 655.99px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-10 {
+            width: 756px;
+            height: 44px;
+        }
+
+        .bbox-10 h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-11 {
+            height: 575.99px;
+            width: 1152px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bbox-11 h3 {
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-11 p {
+            font-size: 17px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbut8 {
+            width: 360px;
+            height: 479.99px;
+        }
+
+        .bbut9 {
+            width: 360px;
+            height: 575.99px;
+        }
+
+        .bbut10 {
+            width: 360px;
+            height: 503.99px;
+        }
+
+        .bbut11 {
+            position: relative;
+        }
+
+        .bbut11 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .hid6 {
+            width: 174px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .bbut11 .hid6::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut11:hover .hid6::before {
+            width: 174px;
+        }
+
+        .bbut12 {
+            position: relative;
+        }
+
+        .bbut12 a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+            padding: 0 0 6px;
+        }
+
+        .hid7 {
+            width: 159px;
+            height: 2px;
+            border: 1px solid grey;
+        }
+
+        .bbut12 .hid7::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: 0px;
+        }
+
+        .bbut12:hover .hid7::before {
+            width: 159px;
+        }
+
+        .blog8 {
+            width: 100%;
+            height: 488px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .blog-con8 {
+            width: 1280px;
+            height: 488px;
+            margin: 0px 119.6px;
+            padding: 0px 0px 64px;
+        }
+
+        .hid8 {
+            width: 1280px;
+            height: 424px;
+            padding: 64px;
+        }
+
+        .mblog8 {
+            width: 1152px;
+            height: 296px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bbox-12 {
+            width: 756px;
+            height: 44px;
+        }
+
+        .bbox-12 h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-13 {
+            width: 1152px;
+            height: 216px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bbut13 {
+            height: 216px;
+            width: 360px;
+        }
+
+        .bbut14 {
+            width: 360px;
+            height: 192px;
+        }
+
+        .bbut15 {
+            width: 360px;
+            height: 216px;
+        }
+
+        .bbox-13 h3 {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .bbox-13 p {
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .hid9 i {
+            font-size: 23px;
+        }
+
+        .hid10 i {
+            font-size: 23px;
+        }
+
+        .hid11 i {
+            font-size: 23px;
+        }
+
+        .blog9 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(128, 128, 128, 0.088);
+        }
+
+        .blog-con9 {
+            width: 1280px;
+            height: 500px;
+            padding: 64px;
+        }
+
+        .mblog9 {
+            width: 1152px;
+            height: 372px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bbox-14 {
+            width: 459px;
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box-son1 {
+            width: 459px;
+            height: 128px;
+        }
+
+        .box-son1 h1 {
+            font-size: 52px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .box-son2 {
+            width: 459px;
+            height: 60px;
+            display: flex;
+            align-items: end;
+        }
+
+        .box-son2 a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .hid15 {
+            border: 1px solid black;
+            width: 225px;
+            height: 48px;
+            background-color: #000000;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 8px;
+        }
+
+        .hid15:hover {
+            background-color: rgba(0, 0, 0, 0.822);
+        }
+
+        @media screen and (max-width:1280px) {
+            .blog-con1 {
+                width: 100%;
+            }
+
+            .blog-con1 img {
+                width: 100%;
+            }
+
+            .mblog1 {
+                width: 100%;
+            }
+
+            .blog-con2 {
+                width: 100%;
+            }
+
+            .mblog2 {
+                width: 100%;
+            }
+
+            .bbox-3 {
+                width: 100%;
+            }
+
+            .blog-con3 {
+                width: 100%;
+            }
+
+            .mblog3 {
+                width: 100%;
+            }
+
+            .blog-con3 img {
+                width: 100%;
+            }
+
+            .blog4 {
+                height: auto;
+            }
+
+            .blog-con4 {
+                width: 100%;
+                height: auto;
+            }
+
+            .mblog4 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 36px;
+            }
+
+            .blog5 {
+                height: auto;
+            }
+
+            .blog-con5 {
+                width: 100%;
+                height: auto;
+            }
+
+            .mblog5 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 36px;
+            }
+
+            .blog6 {
+                height: auto;
+            }
+
+            .blog-con6 {
+                width: 100%;
+                height: auto;
+            }
+
+            .mblog6 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 36px;
+            }
+
+            .blog7 {
+                width: 100%;
+                height: auto;
+            }
+
+            .blog-con7 {
+                width: 100%;
+                height: auto;
+                row-gap: 36px;
+            }
+
+
+            .mblog7 {
+                width: 100%;
+                height: auto;
+            }
+
+            .bbox-10 {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 36px;
+            }
+
+            .bbox-11 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 36px;
+            }
+
+            .blog8 {
+                height: auto;
+            }
+
+            .blog-con8 {
+                width: 100%;
+                height: auto;
+                margin: 0px 0px;
+                padding: 0px 64px;
+            }
+
+            .hid8 {
+                width: 100%;
+                height: auto;
+                padding: 64px 0px;
+            }
+
+            .mblog8 {
+                width: 100%;
+                height: auto;
+            }
+
+            .bbox-12 {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 36px;
+                margin-top: 36px;
+            }
+
+            .bbox-13 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                row-gap: 36px;
+
+            }
+
+            .bbut13 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hid6 {
+                display: none;
+            }
+
+            .bbut14 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .bbut15 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+
+            .hid5 {
+                display: none;
+            }
+
+            .blog9 {
+                height: auto;
+
+            }
+
+            .blog-con9 {
+                width: 100%;
+                height: auto;
+            }
+
+            .mblog9 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                row-gap: 36px;
+            }
+
+            .bbox-14 {
+                width: 459px;
+                height: 220px;
+            }
+
+            .box-son2 {
+                justify-content: center;
+            }
+
+            .foot-box3 {
+                display: flex;
+                flex-direction: column;
+                row-gap: 36px;
+            }
+
+            .foot-hid1 {
+                margin-bottom: 36px;
+            }
+
+            .foot-hid2 {
+                margin-bottom: 36px;
+            }
+
+
+        }
+
+        @media screen and (max-width:992px) {
+            .novbox2 {
+                display: none;
+            }
+
+            .novbox3 {
+                display: none;
+            }
+
+            .novbox4 {
+                display: none;
+            }
+
+            .but1 {
+                display: none;
+            }
+            .bbox-1 {
+                width: 100%;
+            }
+            .bbox-2 {
+                width: 100%;
+            }
+            .bbox-2 p{
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:576px) {
+            body{
+                padding: 0px 8px;
+            }
+            .nav-con {
+                padding: 0px 0px;
+            }
+            .navbox5{
+                gap: 0px;
+            }
+            .nav-conx {
+                gap: 0px;
+            }
+            .nav-logo{
+                margin-left: 0px;
+            }
+
+            .blog1 {
+                height: auto;
+            }
+
+            .blog-con1 {
+                height: 240px;
+            }
+
+            .blog-con1 img {
+                height: 240px;
+            }
+
+            .mblog1 {
+                height: auto;
+                padding: 16px;
+            }
+
+            .mbox1 {
+                width: 100%;
+                height: auto;
+
+            }
+
+            .mbox1 h1 {
+                font-size: 24px;
+            }
+
+            .blog-con2 {
+                padding: 0px;
+            }
+
+
+
+            .bbox-1 h2 {
+                font-size: 24px;
+            }
+
+
+
+            .bbox-2 p {
+                font-size: 12px;
+                width: 100%;
+                height: auto;
+            }
+
+            .bbox-12 h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 12px !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            h2 {
+                font-size: 24px !important;
+            }
+
+            h3 {
+                font-size: 16px !important;
+            }
+
+            .blog-con4 {
+                padding: 64px 0px;
+            }
+
+            .blog-con5 {
+                padding: 64px 0px;
+            }
+
+            .blog-con6 {
+                padding: 64px 0px;
+            }
+
+            .blog-con7 {
+                padding: 64px 0px;
+            }
+
+            .blog-con8 {
+                padding: 64px 0px;
+            }
+
+            .blog-con9 {
+                padding: 64px 0px;
+            }
+
+            .foot-con {
+                padding: 64px 0px;
+            }
+
+            .mblog4 img {
+                width: 100%;
+            }
+
+            .mblog5 img {
+                width: 100%;
+            }
+
+            .mblog6 img {
+                width: 100%;
+            }
+
+            .mblog9 img {
+                width: 100%;
+            }
+
+            .mbox1 {
+                width: 100%;
+            }
+
+            .mbox2 {
+                width: 100%;
+            }
+
+            .bbox-4 {
+                width: 100%;
+            }
+
+            .bbox-5 {
+                width: 100%;
+            }
+
+            .bbox-6 {
+                width: 100%;
+            }
+
+            .bbox-7 {
+                width: 100%;
+            }
+
+            .bbox-8 {
+                width: 100%;
+            }
+
+            .bbox-9 {
+                width: 100%;
+            }
+
+            .bbox-14 {
+                width: 100%;
+            }
+
+            .box-son1 {
+                width: 100%;
+            }
+
+            .box-son2 {
+                width: 100%;
+            }
+            .foot-box4{
+                display: flex;
+                flex-direction: column;
+            }
+            .fbox6{
+                justify-content: start;
+            }
+            .foot-box1{
+                height: auto;
+            }
+            .foot-box2{
+                height: auto;
+            }
+            .foot-box3{
+                height: auto;
+            }
+            .foot-box4{
+                height: auto;
+            }
+            .foot-hid1 {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+            .fbox1{
+                height: auto;
+            }
+            .fbox2{
+                height: auto;
+            }
+            .fbox3{
+                height: auto;
+            }
+            .fbox4{
+                height: auto;
+            }
+
+            .foot-hid2 {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+   
+
+
+        }
+
+        @media screen and (max-width:360px) {
+            .but2 button span i {
+                margin-right: 0px;
+            }
+            .but2 button{
+                padding: 10px 0px;
+            }
+            .but3 button{
+                padding: 10px 0px;
+            }
+            .bbut8 {
+                width: 100%;
+                height: 479.99px;
+            }
+
+            .bbut9 {
+                width: 100%;
+                height: 575.99px;
+            }
+
+            .bbut10 {
+                width: 100%;
+                height: 503.99px;
+            }
+
+            .card1 {
+                width: 100% !important;
+            }
+
+            .card2 {
+                width: 100% !important;
+            }
+
+            .card3 {
+                width: 100% !important;
+            }
+
+            .bbut8 .card img {
+                width: 100% !important;
+            }
+
+            .bbut9 .card img {
+                width: 100% !important;
+            }
+
+            .bbut10 .card img {
+                width: 100% !important;
+            }
+
+            .card-body1 {
+                padding: 0px 0px !important;
+                width: 100% !important;
+            }
+
+            .card-body2 {
+                padding: 0px 0px !important;
+                width: 100% !important;
+            }
+
+            .card-body3 {
+                padding: 0px 0px !important;
+                width: 100% !important;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="nav">
+            <div class="nav-con">
+                <div class="nav-conx">
+                    <div class="navbox1">
+                        <div class="nav-logo">
+                            <a href="index.html">Uber</a>
+                        </div>
+                    </div>
+                    <div class="novbox2">
+                        <div class="nav-list">
+                            <div class="but-con1">
+                                <button class="butx" type="button">
+                                    Şirket
+                                </button>
+                                <div class="dropbox">
+                                    <form>
+                                        <li><a target="_blank" href="about.html">Hakkımızda</a></li>
+                                        <li><a target="_blank" href="uberofferings.html">Sunduklarımız</a></li>
+                                        <li><a href="#">Uber nasıl çalışır?</a></li>
+                                        <li><a href="#">Küresel vatandaşlık</a></li>
+                                        <li><a href="#">Güncel haberler</a></li>
+                                        <li><a href="#">Yatırımcı ilişkileri</a></li>
+                                        <li><a target="_blank" href="blog.html">Blog</a></li>
+                                        <li><a href="#">Kariyer fırsatları</a></li>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novbox3">
+                        <a href="#">Güvenlik</a>
+                    </div>
+                    <div class="novbox4">
+                        <a href="#">Yardım</a>
+                    </div>
+                </div>
+                <div class="nav-cony">
+                    <div class="navbox5">
+                        <div class="but1">
+                            <button><span><i class="fa-sharp fa-solid fa-globe"></i></span>TR-TR</button>
+                        </div>
+                        <div class="but2">
+                            <button class="butx1" type="button"><span><i
+                                        class="fa-solid fa-bars"></i></span>Ürünler</button>
+                            <div class="dropbox1">
+                                <form>
+                                    <li><a style=" display: flex; gap: 20px ;" href="index.html">
+                                            <i class="fa-solid fa-house"></i> Anasayfa</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-car"></i>Yolculuk</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-car-on"></i>Araç Sürün</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-utensils"></i>Yemek siparişi verin</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-champagne-glasses"></i>Dükkanlar</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-truck-front"></i>Freight</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-bicycle"></i>Bisiklet ve scooter</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-train"></i>Transit</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-shop"></i>İşletme</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-money-bill-wave"></i>Para</a></li>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="but3">
+                            <button>Oturum açın</button>
+                        </div>
+                        <div class="but4">
+                            <button>Kaydolun</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <div class="blog1">
+            <div class="blog-con1">
+                <img style=" display:flex ; z-index: -1; position: absolute;" width="1280px" height="480px"
+                    src="
+                https://www.uber-assets.com/image/upload/v1555699210/assets/63/cdb12d-a0cd-49fa-a6c0-6184a84d99ea/original/About_us_600.jpg" alt="">
+                <div class="mblog1">
+                    <div class="mbox1">
+                        <h1>Hakkımızda</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog2">
+            <div class="blog-con2">
+                <div class="mblog2">
+                    <div class="bbox-1">
+                        <h2>Dünyanın nasıl daha iyi hareket edebileceğini yeniden hayal ediyoruz</h2>
+                    </div>
+                    <div class="bbox-2">
+                        <p>Harekete güç veriyoruz. O, bize hayat veren şey. Damarlarımızda dolaşıyor. Her sabah yataktan
+                            kalkmamızı sağlıyor. Hep nasıl daha iyi hareket edebileceğimizi hayal etmeye yöneltiyor.
+                            Sizin için. Gitmek istediğiniz her yer için. Size getirilmesini istediğiniz her şey için.
+                            İstediğiniz gibi kazanç sağlamanız için. Dünyanın her yerinde. Gerçek zamanlı olarak. Anın
+                            inanılmaz hızında.</p>
+                    </div>
+                    <div class="bbox-3">
+                        <p class="d-inline-flex gap-1">
+                        <div class="hid20">
+                            <a style="background-color: transparent; border: 0px solid transparent; color: #5c5a5a;font-weight: 600;"
+                                class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Misyon beyanımızın tamamını okuyun
+                            </a>
+                            <a style="text-decoration: none; color: #5c5a5a;" data-bs-toggle="collapse"
+                                href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample"><i class="fa-solid fa-angle-down"></i></a>
+                        </div>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div style="border: none; font-size: 14px;" class="card card-body">
+                                Biz Uber’iz. Azimli ve çalışkanız. İnsanların istedikleri yere ulaşmasına, istedikleri
+                                şeyin kendilerine ulaştırılmasına ve istedikleri şekilde kazanç elde etmesine yardımcı
+                                olma misyonumuz için dur durak bilmeden çalışırız. Harekete güç veriyoruz. O, bize hayat
+                                veren şey. Damarlarımızda dolaşıyor. Her sabah yataktan kalkmamızı sağlıyor. Hep nasıl
+                                daha iyi hareket edebileceğimizi hayal etmeye yöneltiyor. Sizin için. Gitmek istediğiniz
+                                her yer için. Size getirilmesini istediğiniz her şey için. İstediğiniz gibi kazanç
+                                sağlamanız için. Dünyanın her yerinde. Gerçek zamanlı olarak. Anın inanılmaz hızında.
+
+                                Tek bir düğmeye dokunarak hareket etmeyi mümkün kılmak amacıyla fiziksel ve dijital
+                                dünyaları birleştiren bir teknoloji şirketiyiz. Çünkü hareketin erişilebilir olduğu bir
+                                dünyaya inanıyoruz. Güven içinde hareket etmenizi ve para kazanmanızı istiyoruz.
+                                Gezegenimiz için sürdürülebilir bir şekilde. Cinsiyetiniz, ırkınız, dininiz,
+                                yetenekleriniz veya cinsel yöneliminiz ne olursa olsun özgürce ve korkusuzca hareket
+                                etme hakkınızı savunuyoruz. Elbette her zaman doğrusunu yapamadık. Ancak başarısızlıktan
+                                korkmuyoruz çünkü bu bizi daha iyi, daha akıllı ve daha güçlü kılıyor. Müşterilerimiz,
+                                yerel topluluklar, şehirler ve inanılmaz çeşitlilikteki uluslararası ortaklarımız için
+                                doğru olanı yapma kararlılığımızı güçlendiriyor.
+
+                                Uber, 2008 yılında karlı bir gecede Paris’te bir fikir olarak doğdu. O günden beri de
+                                DNA’mızdaki yeniden hayal etme ve yeniden icat etme eğilimi devam ediyor. Esnek
+                                kazançları ve insanlar ile nesnelerin hareketini sürekli yeni yöntemler geliştirerek
+                                güçlendiren küresel bir platform hâline geldik. 4 tekerlekli araçlardan 2 tekerleklilere
+                                ve 18 tekerlekli kargo teslimatına geçtik. Paket servis yemeklerden günlük temel
+                                ihtiyaçlara ve reçeteli ilaçlara, herhangi bir zamanda ihtiyacınız olabilecek hemen her
+                                şeye. Sabıka kaydı kontrolünden geçmiş sürücü ortaklarından gerçek zamanlı doğrulamaya
+                                kadar güvenliğiniz her zaman önceliğimiz. Uber’de, yeniden hayal etme arayışı asla
+                                bitmez, asla durmaz. Her zaman daha yeni başlamaktadır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog3">
+            <div class="blog-con3">
+                <img style=" display:flex ; z-index: -1; position: absolute;" width="1280px" height="480px"
+                    src="https://www.uber-assets.com/image/upload/v1590112350/assets/ba/e2d6c0-0335-4c4c-ad45-04097c24e819/original/dara-desktop.jpg"
+                    alt="">
+                <div class="mblog3">
+                    <div class="mbox2">
+                        <div class="bbox-4">
+                            <h1>CEO’muzdan mektup</h1>
+                        </div>
+                        <div class="bbox-5">
+                            <p>Ekibimizin, küresel platformumuzdaki herkesi ileriye taşıyacak teknolojiyi sağlama
+                                taahhüdü hakkında bilgi edinin.</p>
+                        </div>
+                        <div class="bbox-6">
+                            <a target="_blank"
+                                href="https://investor.uber.com/a-letter-from-our-ceo/?uclick_id=64b0b6aa-c8aa-4fdb-a006-1974d951b2e1&_ga=2.132299142.925907878.1703273173-1062078526.1702991895&_gl=1*1y77evt*_ga*MTA2MjA3ODUyNi4xNzAyOTkxODk1*_ga_XTGQLY6KPT*MTcwMzQyNzUzNy4yOS4wLjE3MDM0Mjc1MzkuMC4wLjA.">
+                                <div class="bbut1">Dara'nın mektubunu okuyun</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog4">
+            <div class="blog-con4">
+                <div class="mblog4">
+                    <img width="558px" height="372px"
+                        src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1603308507/assets/f6/0c9607-ae68-43d5-9e88-79f3011d88ee/original/Sustainability.jpg"
+                        alt="">
+                    <div class="bbox-7">
+                        <h2>Sürdürülebilirlik</h2>
+                        <p>Uber, 2040 yılına kadar toplu taşıma ve mikro hareketlilik de dâhil olmak üzere tüm
+                            yolculukların sıfır emisyonlu araçlarla yapıldığı, tamamen elektrikli ve sıfır emisyonlu bir
+                            platform olmayı hedefliyor. İklim değişikliği sorunuyla daha aktif bir şekilde mücadele
+                            etmek, dünyanın en büyük hareketlilik platformu olarak sorumluluğumuzdur. Bunu, yolculara
+                            çevre dostu yolculuk yapmanın daha fazla seçeneğini sunarak, sürücü ortaklarının elektrikli
+                            araçlara geçmesine yardımcı olarak, şeffaflığı bir öncelik hâline getirerek ve temiz ve adil
+                            bir enerji geçişini hızlandırmak için STK’lar ve özel sektörle iş ortaklığı yaparak
+                            gerçekleştireceğiz.</p>
+                        <div class="bbut2">
+                            <a href="#" class="bbut3">Daha Fazla Bilgi</a>
+                            <div class="hid1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog5">
+            <div class="blog-con5">
+                <div class="mblog5">
+                    <img width="558px" height="372px"
+                        src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1554854756/assets/74/0853d5-80e4-414a-91d7-6fd0b15a136d/original/UberIM_20250-medium-%282%29.jpg"
+                        alt="">
+                    <div class="bbox-8">
+                        <h2>Yolculuklar ve ötesi</h2>
+                        <p>Yolcuların bir yerden bir yere gitmelerine yardımcı olmanın yanı sıra, insanların daha hızlı
+                            ve daha hesaplı bir şekilde yemek sipariş etmelerine imkân tanıyor, sağlık hizmetlerine
+                            ulaşımın önündeki engelleri kaldırıyor, yeni taşımacılık rezervasyonu çözümleri oluşturuyor
+                            ve şirketlerin çalışanlarına sorunsuz bir yolculuk deneyimi sağlamalarına yardımcı oluyoruz.
+                            Ayrıca her zaman sürücü ortakları ve kuryelerin para kazanmasını da sağlıyoruz.</p>
+                        <div class="hid2">
+                            <div class="bbut4">
+                                <a href="#">Uber uygulamasının kullanımı</a>
+                                <div class="hid3"></div>
+                            </div>
+                            <div class="bbut5">
+                                <a href="#">Sunduklarımız</a>
+                                <div class="hid4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog6">
+            <div class="blog-con6">
+                <div class="mblog6">
+                    <div class="bbox-9">
+                        <h2>Güvenliğiniz bizim için çok önemli</h2>
+                        <p>İster arka koltukta ister direksiyon başında olun, güvenliğiniz bizim için her zaman çok
+                            önemlidir. Bu konuda bize düşen görevi yerine getirmeye kararlıyız ve bu yaklaşımımızın
+                            temelinde teknoloji yer alıyor. Güvenliği artırmak ve herkesin yolculuk yapmasını
+                            kolaylaştırmak için güvenlik uzmanlarıyla iş ortaklığı yapıyor ve yeni teknolojiler ve
+                            sistemler geliştiriyoruz.</p>
+                        <div class="bbut6">
+                            <a href="#" class="bbut7">Daha Fazla Bilgi</a>
+                            <div class="hid5"></div>
+                        </div>
+                    </div>
+                    <img width="558px" height="372px" src="vendor/img/svg1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="blog7">
+            <div class="blog-con7">
+                <div class="mblog7">
+                    <div class="bbox-10">
+                        <h2>Şirket bilgileri</h2>
+                    </div>
+                    <div class="bbox-11">
+                        <div class="bbut8">
+                            <div class="card1" style="width: 360px;">
+                                <img width="360px" height="239.99"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_450,h_300/v1555540623/assets/cb/9b789f-167d-4a57-ac3a-c23060bfa9e8/original/170830_DaraAllHands_0I7A9940_R2.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body1">
+                                    <h3 style="font-size: 17px;" class="card-title">Uber’in sürücü koltuğunda kimler
+                                        var?</h3>
+                                    <br>
+                                    <p style="font-size: 14px;" class="card-text">Uber’de yolcular, sürücü ortakları ve
+                                        çalışanlar için her zaman
+                                        ve her koşulda en doğru şeyi yapmanın önemini vurgulayan bir kültür
+                                        oluşturuyoruz. Lider kadromuz hakkında daha fazla bilgi edinin.</p><br><br>
+                                    <div class="bbut12">
+                                        <a href="#">Yöneticilerimize göz atın</a>
+                                        <div class="hid7"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bbut9">
+                            <div class="card2" style="width: 360px;">
+                                <img width="360px" height="239.99"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_450,h_300/v1619719896/assets/96/8d24b6-76cd-4dcb-8b89-e3125c603538/original/test2259.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body2">
+                                    <h3 style="font-size: 17px;" class="card-title">Çeşitliliği olması gerektiği gibi
+                                        ele alıyoruz</h3>
+                                    <br>
+                                    <p style="font-size: 14px;" class="card-text">Amacımız, herkesi kapsayan ve hizmet
+                                        verdiğimiz şehirlerdeki
+                                        çeşitliliği yansıtan, herkesin kendine özgü kişiliğini gösterebileceği ve özgün
+                                        bir karaktere sahip olmanın güçlü bir yön olarak görülüp takdir edileceği bir
+                                        çalışma ortamı yaratmak. Farklı geçmişlere sahip kişilerin kendini
+                                        geliştirebileceği bir ortam oluşturarak Uber’i, çalışanlarımız ve müşterilerimiz
+                                        için daha iyi bir şirket hâline getireceğiz.</p><br><br>
+                                    <div class="bbut11">
+                                        <a href="#">Çeşitlilik konusunu okuyun</a>
+                                        <div class="hid6"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bbut10">
+                            <div class="card3" style="width: 360px;">
+                                <img width="360px" height="239.99"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_450,h_300/v1664822806/assets/b6/c8a24d-8e79-45a1-9e03-adead244ef0a/original/about-ec-image-01-thumb.png"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body3">
+                                    <h3 style="font-size: 17px;" class="card-title">Doğruluktan şaşmıyoruz</h3>
+                                    <br>
+                                    <p style="font-size: 14px;" class="card-text">Uber’in Etik ve Uyum Programı Belgesi,
+                                        şirket içinde dürüstlüğe
+                                        olan bağlılığımızı en iyi şekilde özetlemektedir. Şeffaflık etik bir kültür için
+                                        çok önemlidir. Bunu, Dürüstlük Yardım Hattımız ile ölçeklenebilir ve etkili
+                                        uyumluluk girişimlerimiz aracılığıyla başarıyoruz.</p>
+                                    <br><br>
+                                    <div class="bbut6">
+                                        <a href="#" class="bbut7">Daha Fazla Bilgi</a>
+                                        <div class="hid5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog8">
+            <div class="blog-con8">
+                <div class="hid8">
+                    <div class="mblog8">
+                        <div class="bbox-12">
+                            <h2>Son gelişmelerden haberdar olun</h2>
+                        </div>
+                        <div class="bbox-13">
+                            <div class="bbut13">
+                                <div class="card" style="width: 360px;">
+                                    <div class="hid9">
+                                        <i class="fa-solid fa-bullhorn"></i>
+                                    </div>
+                                    <br>
+                                    <div class="card-body">
+                                        <h3 style="font-size: 17px;" class="card-title">Güncel Haberler</h3>
+                                        <br>
+                                        <p class="card-text">Yakınınızdaki ve dünya çapındaki iş ortaklıkları, uygulama
+                                            güncellemeleri, girişimler ve daha fazlası hakkında duyurular alın.</p>
+                                        <br><br>
+                                        <div class="bbut11">
+                                            <a href="#">Güncel Haberler'e gidin</a>
+                                            <div class="hid6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bbut14">
+                                <div class="card" style="width: 360px;">
+                                    <div class="hid10">
+                                        <i class="fa-solid fa-people-group"></i>
+                                    </div><br>
+                                    <div class="card-body">
+                                        <h3 style="font-size: 17px;" class="card-title">Blog</h3><br>
+                                        <p style="font-size: 14px;" class="card-text">Keşfedecek yeni yerler bulun ve
+                                            Uber’in ürünleri,
+                                            ortaklıkları ve daha fazlası hakkında bilgi edinin.</p><br><br>
+                                        <div class="bbut11">
+                                            <a href="#">Gönderilerimizi okuyun</a>
+                                            <div class="hid6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bbut15">
+                                <div class="card" style="width: 360px;">
+                                    <div class="hid11">
+                                        <img width="24px" height="24px"
+                                            src="https://socialscore.io/wp-content/uploads/2023/09/cropped-SocialScore-logo.png"
+                                            alt="">
+                                    </div>
+
+                                    <br>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Yatırımcı ilişkileri</h3><br>
+                                        <p class="card-text">Finansal raporları indirin, bir sonraki çeyreğin planlarını
+                                            görün ve kurumsal sorumluluk girişimlerimiz hakkında bilgi edinin.</p>
+                                        <br><br>
+                                        <div class="bbut6">
+                                            <a href="#" class="bbut7">Daha Fazla Bilgi</a>
+                                            <div class="hid5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog9">
+            <div class="blog-con9">
+                <div class="mblog9">
+                    <div class="bbox-14">
+                        <div class="box-son1">
+                            <h1>Gelin, bizimle yeniden hayal edin</h1>
+                        </div>
+                        <div class="box-son2">
+                            <div class="hid15">
+                                <a href="#">Açık pozisyonları arayın</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img width="558px" height="372px" src="vendor/img/worldEkran görüntüsü 2023-12-25 004858.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="foot-con">
+
+                <div class="foot-box1">
+                    <a href="index.html">Uber</a>
+                </div>
+
+                <div class="foot-box2">
+                    <a href="#">Yardım Merkezini Ziyaret Edin</a>
+                </div>
+
+                <div class="foot-box3">
+                    <div class="foot-hid1">
+                        <div class="fbox1">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Şirket</a></li>
+                                <li><a class="frenk" href="about.html">Hakkımızda</a></li>
+                                <li><a class="frenk" href="uberofferings.html">Sunduklarımız</a></li>
+                                <li><a class="frenk" href="#">Güncel Haberler</a></li>
+                                <li><a class="frenk" href="#">Yatırımcılar</a></li>
+                                <li><a class="frenk" href="blog.html">Blog</a></li>
+                                <li><a class="frenk" href="#">Kariyer Fırsatları</a></li>
+                                <li><a class="frenk" href="#">Al</a></li>
+                                <li><a class="frenk" href="#">Hediye kartları</a></li>
+                            </form>
+                        </div>
+                        <div class="fbox2">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Ürünler</a></li>
+                                <li><a class="frenk" href="#">Yolculuk</a></li>
+                                <li><a class="frenk" href="#">Araç Sürün</a></li>
+                                <li><a class="frenk" href="#">Yemek siparişi verin</a></li>
+                                <li><a class="frenk" href="#">Uber for Business</a></li>
+                                <li><a class="frenk" href="#">Uber Freight</a></li>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="foot-hid2">
+                        <div class="fbox3">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Küresel vatandaşlık</a></li>
+                                <li><a class="frenk" href="#">Güvenlik</a></li>
+                                <li><a class="frenk" href="#">Çeşitlilik ve Kapsayıcılık</a></li>
+                            </form>
+                        </div>
+                        <div class="fbox4">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Yolculuk</a></li>
+                                <li><a class="frenk" href="#">Reserve</a></li>
+                                <li><a class="frenk" href="#">Havalimanları</a></li>
+                                <li><a class="frenk" href="#">Şehirler</a></li>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="foot-box4">
+                    <div class="fbox5">
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="fbox6">
+                        <button class="fbut1" type="menu"> <span style="font-size: 16px;"><i
+                                    class="fa-sharp fa-solid fa-globe"></i>
+                            </span> Türkçe</button>
+                        <button class="fbut1" type="menu"><span style="font-size: 16px;"><i
+                                    class="fa-solid fa-location-dot"></i>
+                            </span> İstanbul </button>
+                        <div class="flocation"></div>
+                    </div>
+                </div>
+
+                <div class="foot-box5">
+                    <div class="fbox7">
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?gl=US&hl=en_US&id=com.ubercab&referrer=singular_click_id%3D5e5fd1af-3632-4b70-8855-7ee8b9b05bec">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40">
+                                <path
+                                    d="M130 40H5c-2.8 0-5-2.2-5-5V5c0-2.8 2.2-5 5-5h125c2.8 0 5 2.2 5 5v30c0 2.8-2.2 5-5 5z" />
+                                <path
+                                    d="M130 .8c2.3 0 4.2 1.9 4.2 4.2v30c0 2.3-1.9 4.2-4.2 4.2H5C2.7 39.2.8 37.3.8 35V5C.8 2.7 2.7.8 5 .8h125m0-.8H5C2.2 0 0 2.3 0 5v30c0 2.8 2.2 5 5 5h125c2.8 0 5-2.2 5-5V5c0-2.7-2.2-5-5-5z"
+                                    fill="#a6a6a6" />
+                                <path
+                                    d="M47.4 10.2c0 .8-.2 1.5-.7 2-.6.6-1.3.9-2.2.9s-1.6-.3-2.2-.9c-.6-.6-.9-1.3-.9-2.2s.3-1.6.9-2.2c.6-.6 1.3-.9 2.2-.9.4 0 .8.1 1.2.3.4.2.7.4.9.7l-.5.5c-.4-.5-.9-.7-1.6-.7-.6 0-1.2.2-1.6.7-.5.4-.7 1-.7 1.7s.2 1.3.7 1.7 1 .7 1.6.7c.7 0 1.2-.2 1.7-.7.3-.3.5-.7.5-1.2h-2.2v-.8h2.9v.4zM52 7.7h-2.7v1.9h2.5v.7h-2.5v1.9H52v.8h-3.5V7H52v.7zm3.3 5.3h-.8V7.7h-1.7V7H57v.7h-1.7V13zm4.6 0V7h.8v6h-.8zm4.2 0h-.8V7.7h-1.7V7h4.1v.7H64l.1 5.3zm9.5-.8c-.6.6-1.3.9-2.2.9-.9 0-1.6-.3-2.2-.9-.6-.6-.9-1.3-.9-2.2s.3-1.6.9-2.2 1.3-.9 2.2-.9c.9 0 1.6.3 2.2.9s.9 1.3.9 2.2-.3 1.6-.9 2.2zm-3.8-.5c.4.4 1 .7 1.6.7s1.2-.2 1.6-.7c.4-.4.7-1 .7-1.7s-.2-1.3-.7-1.7c-.4-.4-1-.7-1.6-.7s-1.2.2-1.6.7c-.4.4-.7 1-.7 1.7s.2 1.3.7 1.7zm5.8 1.3V7h.9l2.9 4.7V7h.8v6h-.8l-3.1-4.9V13h-.7z"
+                                    fill="#fff" stroke="#fff" stroke-width=".2" stroke-miterlimit="10" />
+                                <path
+                                    d="M68.1 21.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-9.3-6.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6c1.3 0 2.4 1 2.4 2.6 0 1.5-1.1 2.6-2.4 2.6zm-11.1-5.5v1.8H52c-.1 1-.5 1.8-1 2.3-.6.6-1.6 1.3-3.3 1.3-2.7 0-4.7-2.1-4.7-4.8s2.1-4.8 4.7-4.8c1.4 0 2.5.6 3.3 1.3l1.3-1.3c-1.1-1-2.5-1.8-4.5-1.8-3.6 0-6.7 3-6.7 6.6s3.1 6.6 6.7 6.6c2 0 3.4-.6 4.6-1.9 1.2-1.2 1.6-2.9 1.6-4.2 0-.4 0-.8-.1-1.1h-6.2zm45.4 1.4c-.4-1-1.4-2.7-3.6-2.7s-4 1.7-4 4.3c0 2.4 1.8 4.3 4.2 4.3 1.9 0 3.1-1.2 3.5-1.9l-1.4-1c-.5.7-1.1 1.2-2.1 1.2s-1.6-.4-2.1-1.3l5.7-2.4-.2-.5zm-5.8 1.4c0-1.6 1.3-2.5 2.2-2.5.7 0 1.4.4 1.6.9l-3.8 1.6zM82.6 30h1.9V17.5h-1.9V30zm-3-7.3c-.5-.5-1.3-1-2.3-1-2.1 0-4.1 1.9-4.1 4.3s1.9 4.2 4.1 4.2c1 0 1.8-.5 2.2-1h.1v.6c0 1.6-.9 2.5-2.3 2.5-1.1 0-1.9-.8-2.1-1.5l-1.6.7c.5 1.1 1.7 2.5 3.8 2.5 2.2 0 4-1.3 4-4.4V22h-1.8v.7zm-2.2 5.9c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.3 1.1 2.3 2.6-1 2.6-2.3 2.6zm24.4-11.1h-4.5V30h1.9v-4.7h2.6c2.1 0 4.1-1.5 4.1-3.9s-2-3.9-4.1-3.9zm.1 6h-2.7v-4.3h2.7c1.4 0 2.2 1.2 2.2 2.1-.1 1.1-.9 2.2-2.2 2.2zm11.5-1.8c-1.4 0-2.8.6-3.3 1.9l1.7.7c.4-.7 1-.9 1.7-.9 1 0 1.9.6 2 1.6v.1c-.3-.2-1.1-.5-1.9-.5-1.8 0-3.6 1-3.6 2.8 0 1.7 1.5 2.8 3.1 2.8 1.3 0 1.9-.6 2.4-1.2h.1v1h1.8v-4.8c-.2-2.2-1.9-3.5-4-3.5zm-.2 6.9c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.3 2-1.3.8 0 1.2.2 1.7.4-.2 1.2-1.2 2-2.2 2zm10.5-6.6l-2.1 5.4h-.1l-2.2-5.4h-2l3.3 7.6-1.9 4.2h1.9l5.1-11.8h-2zm-16.8 8h1.9V17.5h-1.9V30z"
+                                    fill="#fff" />
+                                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="21.795" y1="-152.295"
+                                    x2="5.012" y2="-135.513" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#00a0ff" />
+                                    <stop offset=".007" stop-color="#00a1ff" />
+                                    <stop offset=".26" stop-color="#00beff" />
+                                    <stop offset=".512" stop-color="#00d2ff" />
+                                    <stop offset=".76" stop-color="#00dfff" />
+                                    <stop offset="1" stop-color="#00e3ff" />
+                                </linearGradient>
+                                <path d="M10.4 7.5c-.3.3-.4.8-.4 1.4V31c0 .6.2 1.1.5 1.4l.1.1L23 20.1v-.2L10.4 7.5z"
+                                    fill="url(#a)" />
+                                <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="33.834" y1="-140.95"
+                                    x2="9.637" y2="-140.95" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#ffe000" />
+                                    <stop offset=".409" stop-color="#ffbd00" />
+                                    <stop offset=".775" stop-color="orange" />
+                                    <stop offset="1" stop-color="#ff9c00" />
+                                </linearGradient>
+                                <path d="M27 24.3l-4.1-4.1v-.3l4.1-4.1.1.1 4.9 2.8c1.4.8 1.4 2.1 0 2.9l-5 2.7z"
+                                    fill="url(#b)" />
+                                <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="24.816" y1="-138.715"
+                                    x2="2.058" y2="-115.957" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#ff3a44" />
+                                    <stop offset="1" stop-color="#c31162" />
+                                </linearGradient>
+                                <path d="M27.1 24.2L22.9 20 10.4 32.5c.5.5 1.2.5 2.1.1l14.6-8.4" fill="url(#c)" />
+                                <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="7.261" y1="-160.788"
+                                    x2="17.424" y2="-150.625" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#32a071" />
+                                    <stop offset=".069" stop-color="#2da771" />
+                                    <stop offset=".476" stop-color="#15cf74" />
+                                    <stop offset=".801" stop-color="#06e775" />
+                                    <stop offset="1" stop-color="#00f076" />
+                                </linearGradient>
+                                <path d="M27.1 15.8L12.5 7.5c-.9-.5-1.6-.4-2.1.1L22.9 20l4.2-4.2z" fill="url(#d)" />
+                                <path d="M27 24.1l-14.5 8.2c-.8.5-1.5.4-2 0l-.1.1.1.1c.5.4 1.2.5 2 0L27 24.1z"
+                                    opacity=".2" />
+                                <path
+                                    d="M10.4 32.3c-.3-.3-.4-.8-.4-1.4v.1c0 .6.2 1.1.5 1.4v-.1h-.1zm21.6-11l-5 2.8.1.1 4.9-2.8c.7-.4 1-.9 1-1.4 0 .5-.4.9-1 1.3z"
+                                    opacity=".12" />
+                                <path
+                                    d="M12.5 7.6L32 18.7c.6.4 1 .8 1 1.3 0-.5-.3-1-1-1.4l-19.5-11c-1.4-.9-2.5-.3-2.5 1.3V9c0-1.5 1.1-2.2 2.5-1.4z"
+                                    opacity=".25" fill="#fff" />
+                            </svg>
+                        </a>
+                        <a target="_blank"
+                            href="https://apps.apple.com/us/app/uber-request-a-ride/id368677368?referrer=singular_click_id%3D79f35389-7565-4bf4-b9b2-7c1e03838d37">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.7 40">
+                                <title>Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917</title>
+                                <path
+                                    d="M110.1 0H7.5c-.7 0-1.3.1-2 .2-.6.1-1.3.3-1.9.6C3 1.1 2.5 1.5 2 2S1.1 3 .8 3.6C.5 4.2.3 4.9.2 5.5c-.1.7-.2 1.4-.2 2v24.9c0 .7.1 1.3.2 2s.3 1.3.6 1.9c.3.7.7 1.2 1.2 1.7s1 .9 1.6 1.2c.6.3 1.2.5 1.9.6.7.1 1.3.2 2 .2h104.6c.7 0 1.3-.1 2-.2s1.3-.3 1.9-.6c.6-.3 1.1-.7 1.6-1.2s.9-1 1.2-1.6c.3-.6.5-1.2.6-1.9.1-.7.2-1.3.2-2v-.9V9.5 8.4v-.9c0-.7-.1-1.3-.2-2s-.3-1.3-.6-1.9c-.6-1.2-1.6-2.2-2.8-2.8-.6-.3-1.2-.5-1.9-.6-.7-.1-1.3-.2-2-.2h-2z"
+                                    fill="#a6a6a6" />
+                                <path
+                                    d="M8.4 39.1h-.9c-.6 0-1.3-.1-1.9-.2-.6-.1-1.1-.3-1.7-.5-.5-.3-1-.6-1.4-1-.4-.4-.8-.9-1-1.4-.3-.5-.4-1.1-.5-1.7-.1-.6-.2-1.2-.2-1.9v-24-.9c0-.6.1-1.3.2-1.9.1-.5.3-1.1.6-1.6s.6-1 1-1.4c.4-.4.9-.7 1.4-1 .5-.3 1.1-.4 1.7-.5C6.3 1 6.9.9 7.6.9H112.2c.6 0 1.2.1 1.9.2.6.1 1.1.3 1.7.5 1 .5 1.9 1.4 2.4 2.4.3.5.4 1.1.5 1.6.1.6.2 1.3.2 1.9v24.9c0 .6-.1 1.2-.2 1.9-.1.6-.3 1.1-.5 1.7-.3.5-.6 1-1 1.4-.4.4-.9.8-1.4 1-.5.3-1.1.5-1.7.5-.6.1-1.2.2-1.9.2H8.4z" />
+                                <path
+                                    d="M24.8 20.3c0-1.7.9-3.3 2.4-4.2-.9-1.3-2.4-2.1-4-2.2-1.7-.2-3.3 1-4.2 1-.9 0-2.2-1-3.6-1-1.9.1-3.6 1.1-4.5 2.7-1.9 3.3-.5 8.3 1.4 11 .9 1.3 2 2.8 3.4 2.8 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.1.9 3.6.9s2.4-1.3 3.3-2.7c.7-.9 1.2-2 1.5-3.1-1.8-.6-2.9-2.4-2.9-4.3zM22 12.2c.8-1 1.2-2.2 1.1-3.5-1.2.1-2.4.7-3.2 1.7-.8.9-1.2 2.1-1.1 3.4 1.3 0 2.4-.6 3.2-1.6zM42.3 27.1h-4.7l-1.1 3.4h-2L39 18.1h2l4.5 12.4h-2l-1.2-3.4zm-4.2-1.5h3.8L40 20.1h-.1l-1.8 5.5zm17.1.4c0 2.8-1.5 4.6-3.8 4.6-1.2.1-2.3-.6-2.8-1.6v4.5h-1.9v-12h1.8V23c.6-1 1.7-1.6 2.9-1.6 2.2-.1 3.8 1.8 3.8 4.6zm-2 0c0-1.8-.9-3-2.4-3-1.4 0-2.4 1.2-2.4 3s1 3 2.4 3c1.5 0 2.4-1.2 2.4-3zm11.9 0c0 2.8-1.5 4.6-3.8 4.6-1.2.1-2.3-.6-2.8-1.6v4.5h-1.9v-12h1.8V23c.6-1 1.7-1.6 2.9-1.6 2.3-.1 3.8 1.8 3.8 4.6zm-1.9 0c0-1.8-.9-3-2.4-3-1.4 0-2.4 1.2-2.4 3s1 3 2.4 3c1.5 0 2.4-1.2 2.4-3zm8.5 1c.1 1.2 1.3 2 3 2 1.6 0 2.7-.8 2.7-1.9 0-1-.7-1.5-2.3-1.9l-1.6-.4c-2.3-.5-3.3-1.6-3.3-3.3 0-2.1 1.9-3.6 4.5-3.6s4.4 1.5 4.5 3.6h-1.9c-.1-1.2-1.1-2-2.6-2s-2.5.8-2.5 1.9c0 .9.7 1.4 2.3 1.8l1.4.3c2.5.6 3.6 1.6 3.6 3.4 0 2.3-1.8 3.8-4.8 3.8-2.8 0-4.6-1.4-4.7-3.7h1.7zm11.6-7.7v2.1H85v1.5h-1.7v5c0 .8.3 1.1 1.1 1.1h.6v1.5c-.3.1-.7.1-1 .1-1.8 0-2.5-.7-2.5-2.4V23h-1.3v-1.5h1.3v-2.1h1.8zm2.8 6.7c0-2.8 1.7-4.6 4.3-4.6 2.6 0 4.3 1.8 4.3 4.6 0 2.9-1.7 4.6-4.3 4.6-2.7 0-4.3-1.8-4.3-4.6zm6.7 0c0-2-.9-3.1-2.4-3.1S88 24 88 26s.9 3.1 2.4 3.1 2.4-1.2 2.4-3.1zm3.4-4.6H98V23c.2-1 1.2-1.7 2.2-1.6.2 0 .4 0 .6.1v1.7c-.3-.1-.6-.1-.8-.1-1 0-1.9.8-1.9 1.8v5.7h-1.9v-9.2zm13.2 6.4c-.2 1.6-1.8 2.8-3.9 2.8-2.6 0-4.3-1.8-4.3-4.6s1.6-4.7 4.2-4.7c2.5 0 4.1 1.7 4.1 4.5v.6h-6.4v.1c-.1 1.3.8 2.4 2.1 2.6h.3c.9.1 1.8-.4 2.1-1.3h1.8zm-6.3-2.7h4.5c.1-1.2-.9-2.2-2.1-2.3h-.2c-1.2 0-2.2 1-2.2 2.3z"
+                                    fill="#fff" />
+                                <g>
+                                    <path
+                                        d="M37.8 8.7c1.5-.1 2.7 1 2.8 2.4v.5c0 1.9-1 3-2.8 3h-2.2v-6l2.2.1zm-1.2 5.2h1.1c1 .1 1.9-.7 2-1.8v-.4c.1-1-.6-2-1.6-2.1h-1.5v4.3zm5.1-1.5c-.1-1.2.8-2.2 1.9-2.3 1.2-.1 2.2.8 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.3 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.8 0 1.2-.6 1.2-1.6zm6.6 2.3h-.9l-.9-3.3h-.1l-.9 3.3h-.9l-1.2-4.5h.9l.8 3.4h.1l.9-3.4h.9l.9 3.4h.1l.8-3.4h.9l-1.4 4.5zm2.3-4.5h.9v.7h.1c.2-.5.8-.8 1.3-.8.8-.1 1.5.5 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9v-4.5zm5.2-1.8h.9v6.3h-.9V8.4zm2.1 4c-.1-1.2.7-2.2 1.9-2.3 1.2-.1 2.2.7 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.4 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.7 0 1.2-.6 1.2-1.6zm1.8 1c0-.8.6-1.3 1.7-1.3l1.2-.1v-.4c0-.5-.3-.7-.9-.7-.5 0-.8.2-.9.5h-.9c.1-.8.8-1.3 1.8-1.3 1.1 0 1.8.6 1.8 1.5v3.1h-.9v-.6h-.1c-.3.5-.8.7-1.4.7-.7.1-1.4-.5-1.5-1.2.1-.1.1-.1.1-.2zm2.9-.4v-.4l-1.1.1c-.6 0-.9.3-.9.6 0 .4.4.6.8.6.6.2 1.1-.2 1.2-.9 0 .1 0 .1 0 0zm2-.6c0-1.4.7-2.3 1.9-2.3.6 0 1.1.3 1.4.8h.1V8.4h.9v6.3h-.9V14h-.1c-.3.5-.8.8-1.4.8-1.1 0-1.9-.9-1.9-2.4zm1 0c0 1 .4 1.5 1.2 1.5.8 0 1.2-.6 1.2-1.5s-.5-1.5-1.2-1.5c-.8 0-1.2.6-1.2 1.5zm6.9 0c-.1-1.2.7-2.2 1.9-2.3 1.2-.1 2.2.7 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.4 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.7 0 1.2-.6 1.2-1.6zm2.1-2.2h.9v.7h.1c.2-.5.8-.8 1.3-.8.8-.1 1.5.5 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9v-4.5zm8.8-1.1v1.1h1v.8h-1v2.3c0 .5.2.7.6.7h.3v.7h-.5c-1 0-1.4-.3-1.4-1.2V11h-.7v-.7h.7V9.1h1zm2.2-.7h.9v2.5h.1c.2-.5.8-.9 1.4-.8.8 0 1.5.6 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9V8.4zm9.1 5.1c-.2.8-1.1 1.4-1.9 1.3-1.1 0-2.1-.9-2.1-2v-.3c-.2-1.1.6-2.2 1.8-2.3h.3c1.3 0 2 .9 2 2.3v.3h-3.2v.1c-.1.7.4 1.2 1.1 1.3h.1c.4.1.9-.2 1.1-.5h.8zm-3.2-1.5h2.3c0-.6-.4-1.1-1-1.2h-.1c-.6.1-1.2.6-1.2 1.2z"
+                                        fill="#fff" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="foot-box6">
+                    <div class="fbox8">
+                        <p>© 2023 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="fbox9">
+                        <p><a target="_blank" href="#">Gizlilik</a></p>
+                        <p><a target="_blank" href="#">Erişebilirlik</a></p>
+                        <p><a target="_blank" href="#">Hükümler ve Koşullar</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

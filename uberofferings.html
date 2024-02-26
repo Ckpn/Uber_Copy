@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Uygulamaları, Ürünleri ve Teklifler | Uber</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: #000000;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            height: 64px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .nav-con {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 70px;
+            align-items: center;
+            height: 40px;
+            width: 1408px;
+        }
+
+        .nav-conx {
+            display: flex;
+            gap: 23px;
+        }
+
+
+        .navbox1 {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+
+        .nav-logo {
+            margin-left: 50px;
+            font-size: 24px;
+        }
+
+        .nav-logo a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .novbox2 {
+            display: flex;
+            align-items: center;
+        }
+
+        .butx {
+            color: #ffffff;
+            background-color: transparent;
+            font-size: 14px;
+            padding: 10px 12px;
+            height: 38px;
+            width: 88px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+
+        .but-con i {
+            color: #ffffff;
+        }
+
+        .butx:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+        }
+
+        .novbox3 {
+            display: flex;
+            align-items: center;
+            padding: 10px 10px;
+            height: 38px;
+            width: 88px;
+            border: 1px solid black;
+
+        }
+
+        .novbox3:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+            border-radius: 20px;
+        }
+
+        .novbox3 a {
+            font-size: 14px;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+
+        .novbox4 {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+        }
+
+        .novbox4:hover {
+            border: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.352);
+            border-radius: 20px;
+        }
+
+        .novbox4 a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .dropbox {
+            width: 192px;
+            height: auto;
+            border: 1px solid rgba(255, 255, 255, 0.126);
+            border-radius: 0px 0px 10px 10px;
+            z-index: 10;
+            position: absolute;
+            background-color: white;
+            display: none;
+            padding-left: 10px;
+            top: 50px;
+
+        }
+
+        .but-con1:hover .dropbox {
+            display: block;
+
+        }
+
+        .dropbox form {
+            list-style: none;
+
+        }
+
+        .dropbox li {
+            padding: 5px;
+        }
+
+        .dropbox li a {
+            text-decoration: none;
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+        }
+
+        .but2 {
+            position: relative;
+        }
+
+        .dropbox1 {
+            width: 272px;
+            height: 258px;
+            border: 1px solid rgba(255, 255, 255, 0.126);
+            border-radius: 0px 0px 0px 10px;
+            background-color: white;
+            padding-left: 10px;
+            position: absolute;
+            top: 38px;
+            overflow-y: scroll;
+            display: none;
+
+        }
+
+        .but2:hover .dropbox1 {
+            display: block;
+            transition: 1s;
+        }
+
+        .dropbox1 form {
+            list-style: none;
+
+        }
+
+        .dropbox1 li {
+            width: 241px;
+            height: 64px;
+            padding: 20px 20px;
+        }
+
+        .dropbox1 li a {
+            text-decoration: none;
+            color: grey;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 400;
+        }
+
+        .novbox4 a {
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .navbox5 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .but1 button {
+            width: 89px;
+            height: auto;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but1 button span i {
+            margin-right: 5px;
+        }
+
+        .but1 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+        .but2 button {
+            width: auto;
+            height: 36px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but2 button span i {
+            margin-right: 10px;
+        }
+
+        .but2 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+
+        .but3 button {
+            width: 106px;
+            height: 36px;
+            border-radius: 20px;
+            color: white;
+            background-color: transparent;
+            border: 1px solid transparent;
+            font-size: 13px;
+            padding: 10px 12px;
+        }
+
+        .but3 button:hover {
+            background-color: rgba(128, 128, 128, 0.42);
+        }
+
+        .but4 button {
+            width: 85.5px;
+            height: 36px;
+            font-size: 13px;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: white;
+            font-weight: 500;
+        }
+
+        .but4 button:hover {
+            background-color: #ddd;
+        }
+
+        /* HEADER BİTİŞ */
+        /* MAİN BAŞLANGI:Ç */
+
+        .box1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con1 {
+            width: 1280px;
+            height: 352px;
+            padding: 64px;
+
+        }
+
+        .main-con2 {
+            width: 756px;
+            height: 224px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .baslik1 h1 {
+            font-size: 52px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .par1 {
+            font-size: 20px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .kutu1 button {
+            width: 220px;
+            height: 55px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 18px;
+            border: solid;
+        }
+
+        .kutu1 button:hover {
+            background-color: rgba(0, 0, 0, 0.822);
+        }
+
+        .box2 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con3 {
+            width: 1280px;
+            height: 327px;
+            padding: 64px 64px 0;
+        }
+
+        .main-con4 {
+            width: 1152px;
+            height: 263px;
+        }
+
+        .baslik2 h2 {
+            font-size: 36px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .par-con {
+            display: flex;
+        }
+
+        .par2 {
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .par3 {
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .par4 {
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+        }
+
+        .box3 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con5 {
+            width: 1280px;
+            height: 775px;
+            padding: 64px;
+        }
+
+        .main-con5 p {
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+
+        .baslik3 {
+            width: 756px;
+            height: 68px;
+        }
+
+        .baslik3 h2 {
+            font-size: 36px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .par5 {
+            width: 756px;
+            height: 44px;
+        }
+
+        .par5 p {
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .link-con {
+            display: flex;
+            position: relative;
+        }
+
+
+        .link-con .link1 a {
+            text-decoration: none;
+            padding-right: 20px;
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+        .link-con .link2 a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #333333;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .bx1 {
+            height: 2px;
+            width: 86%;
+            border: 1px solid rgba(128, 128, 128, 0.48);
+        }
+
+        .bx2 {
+            height: 2px;
+            width: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.48);
+
+        }
+
+        .main-con7 .link-con .link1::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            top: 20px;
+
+        }
+
+        .main-con7 .link-con .link1:hover::before {
+            width: 120px;
+        }
+
+        .main-con7 .link-con .link2::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            top: 20px;
+        }
+
+        .main-con7 .link-con .link2:hover::before {
+            width: 243px;
+        }
+
+
+        .main-con6 {
+            margin-top: 30px;
+            height: 355px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card1 {
+            width: 354px;
+            height: 355px;
+
+        }
+
+        .card2 {
+            width: 354px;
+            height: 355px;
+
+        }
+
+        .card3 {
+            width: 354px;
+            height: 355px;
+
+        }
+
+        .but5 {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .bx6 {
+            height: 2px;
+            width: 36%;
+            border: 1px solid rgba(128, 128, 128, 0.48);
+        }
+
+        .cardx {
+            position: relative;
+        }
+
+        .cardx .but5::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -1px;
+        }
+
+        .cardx .but5:hover::before {
+            width: 103px;
+        }
+
+        .main-con8 {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            align-items: center;
+            margin-top: 48px;
+        }
+
+        .bx3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+        }
+
+        .bx4 {
+            width: 50px;
+            height: 50px;
+            border: 1 solid white;
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bx5 {
+            width: 50px;
+            height: 50px;
+            border: 1 solid white;
+            border-radius: 50%;
+            background-color: rgba(128, 128, 128, 0.18);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box4 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con9 {
+            width: 1280px;
+            height: 256px;
+            padding: 0px 64px 64px;
+        }
+
+        .main-con9 .row {
+            display: flex;
+            gap: 25px;
+
+        }
+
+        .but9 {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .but7 {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .but8 {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .main-con9 .card-text {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+
+        .card4 {
+            width: 360px;
+        }
+
+        .card5 {
+            width: 360px;
+        }
+
+        .card6 {
+            width: 360px;
+        }
+
+        .bx10 {
+            height: 2px;
+            width: 72%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx11 {
+            height: 2px;
+            width: 21%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx12 {
+            height: 2px;
+            width: 48%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .box4a {
+            position: relative;
+        }
+
+        .box4a .but9::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -3px;
+        }
+
+        .box4a .but9:hover::before {
+            width: 72%;
+        }
+
+        .box4b {
+            position: relative;
+        }
+
+        .box4b .but7::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -1px;
+        }
+
+        .box4b .but7:hover::before {
+            width: 21%;
+        }
+
+        .box4c {
+            position: relative;
+        }
+
+        .box4c .but8::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -1px;
+        }
+
+        .box4c .but8:hover::before {
+            width: 48%;
+        }
+
+        .box5 {
+            height: 820px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con10 {
+            height: 820px;
+            width: 1280px;
+            padding: 64px;
+
+        }
+
+        .box5-con {
+            width: 1152px;
+            height: 692px;
+        }
+
+        .box5-title {
+            width: 756px;
+            height: 44px;
+            margin-bottom: 40px;
+        }
+
+        .box5-title h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .box5-con1 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .box5-con2 {
+            width: 558px;
+            height: 564px;
+        }
+
+        .box5-con3 {
+            width: 558px;
+            height: 564px;
+        }
+
+        .box5-con2 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .box5-con3 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .main-con10 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        .box5a a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .box5b a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .bx13 {
+            height: 2px;
+            width: 27%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx14 {
+            height: 2px;
+            width: 31%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .box5a {
+            position: relative;
+        }
+
+        .box5a .but10::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+        }
+
+        .box5a .but10:hover::before {
+            width: 27%;
+        }
+
+        .box5b {
+            position: relative;
+        }
+
+        .box5b .but11::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+        }
+
+        .box5b .but11:hover::before {
+            width: 31%;
+        }
+
+        .box6 {
+            height: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con11 {
+            height: 748px;
+            width: 1280px;
+            padding: 64px;
+
+        }
+
+        .box6-con {
+            width: 1152px;
+            height: 620px;
+        }
+
+        .box6-title {
+            width: 756px;
+            height: 44px;
+            margin-bottom: 40px;
+        }
+
+        .box6-title h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .box6-con1 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .box6-con2 {
+            width: 558px;
+            height: 540px;
+        }
+
+        .box6-con3 {
+            width: 558px;
+            height: 540px;
+        }
+
+        .box6-con2 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .box6-con3 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .main-con11 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        .box6a a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .box6b a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+        }
+
+        .bx15 {
+            height: 2px;
+            width: 27%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx16 {
+            height: 2px;
+            width: 35%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .box6a {
+            position: relative;
+        }
+
+        .box6a .but12::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+        }
+
+        .box6a .but12:hover::before {
+            width: 27%;
+        }
+
+        .box6b {
+            position: relative;
+        }
+
+        .box6b .but13::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+
+        }
+
+        .box6b .but13:hover::before {
+            width: 35%;
+        }
+
+        .box7 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con12 {
+            height: 820px;
+            width: 1280px;
+            padding: 64px;
+
+        }
+
+        .box7-con {
+            width: 1152px;
+            height: 692px;
+        }
+
+        .box7-title {
+            width: 756px;
+            height: 44px;
+            margin-bottom: 40px;
+        }
+
+        .box7-title h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .box7-con1 {
+            display: flex;
+            column-gap: 36px;
+            width: 1152px;
+
+        }
+
+        .box7-con2 {
+            width: 558px;
+            height: 564px;
+        }
+
+        .box7-con3 {
+            width: 558px;
+            height: 564px;
+        }
+
+        .box7-con2 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .box7-con3 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .main-con12 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        .box7a a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+
+        }
+
+        .box7b a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+
+        }
+
+        .bx17 {
+            height: 2px;
+            width: 50.5%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx18 {
+            height: 2px;
+            width: 30%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .box7a {
+            position: relative;
+        }
+
+        .box7a .but14::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+        }
+
+        .box7a .but14:hover::before {
+            width: 50.5%;
+        }
+
+        .box7b {
+            position: relative;
+        }
+
+        .box7b .but15::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+
+        }
+
+        .box7b .but15:hover::before {
+            width: 30%;
+        }
+
+        .box8 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con13 {
+            height: 864px;
+            width: 1280px;
+            padding: 64px;
+
+        }
+
+        .box8-con {
+            width: 1152px;
+            height: 736px;
+        }
+
+        .box8-title {
+            width: 756px;
+            height: 88px;
+            margin-bottom: 40px;
+        }
+
+        .box8-title h2 {
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #333333;
+        }
+
+        .box8-con1 {
+            display: flex;
+            column-gap: 36px;
+            width: 1152px;
+
+        }
+
+        .box8-con2 {
+            width: 558px;
+            height: 612px;
+        }
+
+        .box8-con3 {
+            width: 558px;
+            height: 612px;
+        }
+
+        .box8-con2 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .box8-con3 h3 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+
+        .main-con13 p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        .box8a a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+
+        }
+
+        .box8b a {
+            text-decoration: none;
+            color: #000000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 200px;
+
+        }
+
+        .bx19 {
+            height: 2px;
+            width: 30.3%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .bx20 {
+            height: 2px;
+            width: 36.4%;
+            background-color: rgba(128, 128, 128, 0.48);
+        }
+
+        .box8a {
+            position: relative;
+        }
+
+        .box8a .but16::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+
+        }
+
+        .box8a .but16:hover::before {
+            width: 30.3%;
+        }
+
+        .box8b {
+            position: relative;
+        }
+
+        .box8b .but17::before {
+            content: "";
+            position: absolute;
+            width: 0px;
+            height: 2px;
+            background-color: #000000;
+            transition: 1s;
+            bottom: -2px;
+
+        }
+
+        .box8b .but17:hover::before {
+            width: 36.4%;
+        }
+
+        .box9 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .main-con14 {
+            width: 1280px;
+            height: 256px;
+            display: flex;
+            padding: 64px;
+            column-gap: 36px;
+        }
+
+        .box9-con1 {
+            width: 558px;
+            height: 128px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 40px;
+            border-bottom: 2px solid black;
+        }
+
+        .box9-con2 {
+            width: 558px;
+            height: 128px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0 40px;
+            border-bottom: 2px solid black;
+        }
+
+        .box9-1 {
+            width: 335px;
+            height: 88px;
+
+        }
+
+
+        .box9-3 {
+            width: 335px;
+            height: 88px;
+        }
+
+        .box9-1 h2 a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .box9-3 h2 a {
+            text-decoration: none;
+            color: #000000;
+            font-size: 36px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .box9-2 {
+            width: 32px;
+            height: 88px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .box9-2 i {
+            font-size: 24px;
+
+
+        }
+
+        .box9-con1:hover .box9-2>.fa-solid {
+            animation: sag 1s both;
+        }
+
+        @keyframes sag {
+
+            50% {
+                opacity: 0;
+                transform: translate(30px);
+                color: #5c5a5a;
+
+            }
+
+            75% {
+                opacity: 0;
+                color: #5c5a5a;
+                transform: translate(-60px);
+            }
+
+            100% {
+                transform: translate(0px);
+                opacity: 1;
+                color: #5c5a5a;
+            }
+        }
+
+        .box9-4 {
+            width: 32px;
+            height: 88px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .box9-4 i {
+            font-size: 24px;
+
+        }
+
+        .box9-con2:hover .box9-4>.fa-solid {
+            animation: sag1 1s;
+        }
+
+        @keyframes sag1 {
+
+            50% {
+                opacity: 0;
+                transform: translate(30px);
+                color: #5c5a5a;
+
+            }
+
+            75% {
+                opacity: 0;
+                color: #5c5a5a;
+                transform: translate(-60px);
+            }
+
+            100% {
+                transform: translate(0px);
+                opacity: 1;
+                color: #5c5a5a;
+            }
+        }
+
+
+        .box10 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box10-con {
+            width: 1280px;
+            height: 176px;
+            padding: 64px;
+        }
+
+        .box10-con .p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+        }
+
+        /* MAİN BİTİŞ */
+        /*  */
+        /* FOOTER BAŞLANGIC */
+
+        .footer {
+            width: 100%;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+        }
+
+        .foot-con {
+            width: 100%;
+            padding: 128px;
+            padding: 64px;
+        }
+
+        .foot-box1 {
+            width: 100%;
+            height: 112px;
+            display: flex;
+            align-items: center;
+        }
+
+        .foot-box2 {
+            width: 100%;
+            height: 67px;
+        }
+
+        .foot-box3 {
+            width: 100%;
+            display: flex;
+            column-gap: 36px;
+            justify-content: space-between;
+        }
+
+        .foot-box4 {
+            width: 100%;
+            height: 72px;
+            display: flex;
+            padding-right: 200px;
+            margin-top: 36px;
+        }
+
+        .foot-box6 {
+            width: 100%;
+            height: 56px;
+            margin-top: 36px;
+        }
+
+        .fbox1 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox2 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox3 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .foot-hid1 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .foot-hid2 {
+            display: flex;
+            column-gap: 36px;
+        }
+
+        .fbox4 {
+            width: 261px;
+            height: 332px;
+        }
+
+        .fbox5 {
+            width: 100%;
+            height: 72px;
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .fbox6 {
+            width: 100%;
+            height: 72px;
+            padding: 12px 0;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .fbox6 button {
+            height: 30px;
+            width: 100px;
+            border: 1px solid transparent;
+            background-color: transparent;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .fbox6 button:hover {
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        .fbox7 {
+            display: flex;
+            gap: 10px;
+            margin-top: 36px;
+        }
+
+        .fbox7 a .svg {
+            width: 128px;
+            height: 38;
+        }
+
+        .fbox8 {
+            padding: 12px 0;
+            width: 261px;
+            height: 20px;
+        }
+
+        .fbox8 p {
+            color: #5c5a5a;
+            font-size: 12px;
+        }
+
+        .fbox9 {
+            display: flex;
+            gap: 15px;
+            padding-top: 10px;
+        }
+
+        .fbox9 p a {
+            text-decoration: none;
+            color: #5c5a5a;
+            font-size: 12px;
+        }
+
+        .frenk {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .frenk1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .firsli {
+            margin: 0 0 20px;
+        }
+
+        .foot-box1 a {
+            text-decoration: none;
+            font-size: 24px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #eee;
+        }
+
+        .foot-box2 a {
+            text-decoration: none;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: #eee;
+        }
+
+        .fbox1 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox2 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox3 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .fbox4 form {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social1 {
+
+            width: 111.5px;
+            padding-left: 20px;
+        }
+
+        .social1 a {
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .fa-solid {
+            padding-right: 5px;
+        }
+
+
+        @media screen and (max-width:1280px) {
+            .foot-box3 {
+                display: flex;
+                flex-direction: column;
+                row-gap: 36px;
+            }
+
+            .foot-hid1 {
+                margin-bottom: 36px;
+            }
+
+            .foot-hid2 {
+                margin-bottom: 36px;
+            }
+
+            .main-con1 {
+                width: 100%;
+            }
+
+            .main-con3 {
+                width: 100%;
+            }
+
+            .main-con4 {
+                width: 100%;
+            }
+
+            .main-con5 {
+                width: 100%;
+            }
+
+            .main-con9 {
+                width: 100%;
+            }
+
+            .box5 {
+                height: 100%;
+            }
+
+            .main-con10 {
+                width: 100%;
+                height: auto;
+            }
+
+            .box5-con {
+                width: 100%;
+                height: auto;
+            }
+
+            .box5-con1 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box5-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-con11 {
+                width: 100%;
+                height: auto;
+            }
+
+            .box6-con {
+                width: 100%;
+                height: auto;
+            }
+
+            .box6-con1 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box6-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-con12 {
+                width: 100%;
+                height: auto;
+            }
+
+            .box7-con {
+                width: 100%;
+                height: auto;
+            }
+
+            .box7-con1 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box7-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-con13 {
+                width: 100%;
+                height: auto;
+            }
+
+            .box8-con {
+                width: 100%;
+                height: auto;
+            }
+
+            .box8-con1 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box8-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .main-con14 {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                row-gap: 36px;
+            }
+
+            .box9-con1 {
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                border-bottom: none;
+            }
+
+            .box9-con2 {
+                width: 100%;
+                display: flex;
+                justify-content: start;
+                border-bottom: none;
+            }
+
+            .box10-con {
+                width: 100%;
+            }
+
+
+
+        }
+
+
+        @media screen and (max-width:1050px) {
+            .novbox2 {
+                display: none;
+            }
+
+            .novbox3 {
+                display: none;
+            }
+
+            .novbox4 {
+                display: none;
+            }
+
+            .but1 {
+                display: none;
+            }
+
+            .main-con2 {
+                width: 100%;
+            }
+
+            .baslik1 h1 {
+                font-size: 36px;
+            }
+
+            .main-con3 {
+                height: auto;
+            }
+
+            .main-con4 {
+                height: auto;
+            }
+
+            .par-con {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .par5 {
+                width: 100%;
+                height: auto;
+            }
+
+            .main-con5 {
+                height: auto;
+                text-align: center;
+            }
+
+            .main-con6 {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .link-con {
+                display: flex;
+                justify-content: center;
+                padding-top: 36px;
+            }
+
+            .baslik3 {
+                width: 100%;
+                height: auto;
+                padding-bottom: 36px;
+            }
+
+            .bx6 {
+                display: none;
+            }
+
+            .main-con8 {
+                display: none;
+            }
+            .bx10{
+                display: none;
+            }
+            .bx12{
+                display: none;
+            }
+            .bx11{
+                display: none;
+            }
+
+
+        }
+
+        @media screen and (max-width:576px) {
+            .nav-con {
+                padding: 0px 0px;
+            }
+
+            .navbox5 {
+                gap: 0px;
+            }
+
+            .nav-conx {
+                gap: 0px;
+            }
+
+            .nav-logo {
+                margin-left: 0px;
+            }
+
+            .foot-box4 {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                padding: 0px;
+            }
+
+            .fbox6 {
+                justify-content: start;
+            }
+
+            .foot-box1 {
+                height: auto;
+                padding-bottom: 16px;
+            }
+
+            .foot-box2 {
+                height: auto;
+                text-align: start;
+                padding-bottom: 16px;
+
+            }
+
+            .foot-box3 {
+                height: auto;
+            }
+
+            .foot-hid1 {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                row-gap: 18px;
+                text-align: start;
+            }
+            .social1{
+                padding: 0px;
+                text-align: start;
+            }
+            .fbox1 {
+                height: auto;
+            }
+
+            .fbox2 {
+                height: auto;
+            }
+
+            .fbox3 {
+                height: auto;
+            }
+
+            .fbox4 {
+                height: auto;
+            }
+
+            .foot-hid2 {
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                row-gap: 18px;
+                text-align: start;
+            }
+            .main-con1 {
+                padding: 0px;
+            }
+            .main-con3 {
+                padding: 0px;
+            }
+            .main-con5 {
+                padding: 0px;
+            }
+            .main-con9 {
+                padding: 0px;
+                height: auto;
+            }
+            .row{
+                display: flex;
+                flex-direction: column;
+                padding: 36px 0px;
+                align-items: center;
+            }
+            .bx10{
+                display: none;
+            }
+            .bx11{
+                display: none;
+            }
+            .bx12{
+                display: none;
+            }
+            .main-con10 {
+                padding: 0px;
+            }
+            .main-con11 {
+                padding: 0px;
+            }
+            .main-con12 {
+                padding: 0px;
+            }
+            .main-con13 {
+                padding: 0px;
+            }
+            .main-con14 {
+                padding: 0px;
+            }
+            .box9-con1{
+                padding: 0px;
+            }
+            .box9-con2{
+                padding: 0px;
+            }
+            .box10-con{
+                padding: 0px;
+            }
+            body{
+                text-align: center;
+            }
+            .card1 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .card1 img{
+                width: 100%;
+            }
+            .card2 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .card2 img{
+                width: 100%;
+            }
+            .card3 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            .card3 img{
+                width: 100%;
+            }
+            .bx1{
+                display: none;
+            }
+            .bx2{
+                display: none;
+            }
+            .bx20{
+                display: none;
+            }
+            .bx19{
+                display: none;
+            }
+            .bx18{
+                display: none;
+            }
+            .bx17{
+                display: none;
+            }
+            .bx16{
+                display: none;
+            }
+            .bx15{
+                display: none;
+            }
+            .bx14{
+                display: none;
+            }
+            .bx13{
+                display: none;
+            }
+            body h2{
+                font-size: 24px !important;
+            }
+            body h3{
+                font-size: 20px !important;
+            }
+            .box9-1 {
+                display: flex;
+                align-items: center;
+                height: auto;
+                width: auto;
+            }
+            .box9-2 {
+                display: flex;
+                align-items: center;
+                height: auto;
+            }
+            .box9-3 {
+                display: flex;
+                align-items: center;
+                height: auto;
+                width: auto;
+            }
+            .box9-4 {
+                display: flex;
+                align-items: center;
+                height: auto;
+            }
+            .box9-1 a{
+                font-size: 24px !important;
+            }
+            .box9-3 a{
+                font-size: 24px !important;
+            }
+            .box5-con2{
+                width: 100%;
+            }
+            .box5-con2 img{
+                width: 100%;
+            }
+            .box5-con3{
+                width: 100%;
+                margin-bottom: 18px;
+                height: auto;
+            }
+            .box5-con3 img{
+                width: 100%;
+            }
+            .box6-con2{
+                width: 100%;
+            }
+            .box6-con2 img{
+                width: 100%;
+            }
+            .box6-con3{
+                width: 100%;
+            }
+            .box6-con3 img{
+                width: 100%;
+            }
+            .box7-con2{
+                width: 100%;
+            }
+            .box7-con2 img{ 
+                width: 100%;
+            }
+            .box7-con3{
+                width: 100%;
+                height: auto;
+                margin-bottom: 18px;
+            }
+            .box7-con3 img{ 
+                width: 100%;
+            }
+            .box8-con2{
+                width: 100%;
+            }
+            .box8-con2 img{ 
+                width: 100%;
+            }
+            .box8-con3{
+                width: 100%;
+            }
+            .box8-con3 img{ 
+                width: 100%;
+            }
+            .fbox8{
+                text-align: start;
+            }
+
+        }
+
+        @media screen and (max-width:360px) {
+            .but2 button span i {
+                margin-right: 0px;
+            }
+
+            .but2 button {
+                padding: 10px 0px;
+            }
+
+            .but3 button {
+                padding: 10px 0px;
+            }
+            .foot-con{
+                padding: 0px;
+            }
+            .width-x{
+                width: 100%;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="nav">
+            <div class="nav-con">
+                <div class="nav-conx">
+                    <div class="navbox1">
+                        <div class="nav-logo">
+                            <a href="index.html">Uber</a>
+                        </div>
+                    </div>
+                    <div class="novbox2">
+                        <div class="nav-list">
+                            <div class="but-con1">
+                                <button class="butx" type="button">
+                                    Şirket
+                                </button>
+                                <div class="dropbox">
+                                    <form>
+                                        <li><a target="_blank" href="about.html">Hakkımızda</a></li>
+                                        <li><a target="_blank" href="uberofferings.html">Sunduklarımız</a></li>
+                                        <li><a href="#">Uber nasıl çalışır?</a></li>
+                                        <li><a href="#">Küresel vatandaşlık</a></li>
+                                        <li><a href="#">Güncel haberler</a></li>
+                                        <li><a href="#">Yatırımcı ilişkileri</a></li>
+                                        <li><a target="_blank" href="blog.html">Blog</a></li>
+                                        <li><a href="#">Kariyer fırsatları</a></li>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="novbox3">
+                        <a href="#">Güvenlik</a>
+                    </div>
+                    <div class="novbox4">
+                        <a href="#">Yardım</a>
+                    </div>
+                </div>
+                <div class="nav-cony">
+                    <div class="navbox5">
+                        <div class="but1">
+                            <button><span><i class="fa-sharp fa-solid fa-globe"></i></span>TR-TR</button>
+                        </div>
+                        <div class="but2">
+                            <button class="butx1" type="button"><span><i
+                                        class="fa-solid fa-bars"></i></span>Ürünler</button>
+                            <div class="dropbox1">
+                                <form>
+                                    <li><a style=" display: flex; gap: 20px ;" href="index.html">
+                                            <i class="fa-solid fa-house"></i> Anasayfa</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-car"></i>Yolculuk</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-car-on"></i>Araç Sürün</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-utensils"></i>Yemek siparişi verin</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-champagne-glasses"></i>Dükkanlar</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-truck-front"></i>Freight</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-bicycle"></i>Bisiklet ve scooter</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-train"></i>Transit</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-shop"></i>İşletme</a></li>
+                                    <li><a style=" display: flex; gap: 20px ;" href="#"> <i
+                                                class="fa-solid fa-money-bill-wave"></i>Para</a></li>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="but3">
+                            <button>Oturum açın</button>
+                        </div>
+                        <div class="but4">
+                            <button>Kaydolun</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="box1">
+            <div class="main-con1">
+                <div class="main-con2">
+                    <div class="baslik1">
+                        <h1>Uber'in sunduğu teknolojiler</h1>
+                    </div>
+                    <div class="par1">
+                        İnsanların nasıl araç çağırabileceğini ve bir yerden bir yere nasıl ulaşabileceklerini
+                        değiştirmek
+                        yalnızca bir başlangıç.
+                    </div>
+                    <div class="kutu1">
+                        <button type="submit">Uygulamayı keşfedin</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="main-con3">
+                <div class="main-con4">
+                    <div class="baslik2">
+                        <h2>Uber uygulamaları, ürünleri ve diğer hizmetler</h2>
+                    </div>
+                    <div class="par-con">
+                        <div class="par2">Uber, misyonu dünyanın nasıl daha iyi hareket edebileceğini yeniden tasarlamak
+                            olan bir teknoloji şirketidir. Teknolojimiz, yolculuk yapmak isteyen tüketicilerle bağımsız
+                            yolculuk hizmeti sağlayıcıları ve bunun yanı sıra toplu taşıma, bisiklet ve scooter gibi
+                            başka ulaşım araçlarını eşleştiren çok taraflı platformlar geliştirmemize ve sürdürmemize
+                            yardımcı olur.</div>
+                        <div class="par-con1">
+                            <div class="par3">
+                                Ayrıca tüketicileri, restoranlar, marketler ve diğer dükkânlarla bir araya getirerek
+                                yemek, market ürünleri ve diğer malları satın almalarını ve satmalarını sağlıyoruz,
+                                ardından onları bağımsız teslimat hizmeti sağlayıcılarıyla eşleştiriyoruz. Buna ek
+                                olarak Uber, taşımacılık sektöründeki göndericiler ile taşıyıcılar arasında bağlantı da
+                                kuruyor.
+                            </div>
+                            <div class="par4">
+                                Teknolojimiz, tüm dünyada 70’i aşkın ülkede ve 10.000’i aşkın şehirde insanların
+                                birbiriyle bağlantı kurmasına ve hareket etmesine yardımcı oluyor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="main-con5">
+                <div class="main-con7">
+                    <div class="baslik3">
+                        <h2>Uber'in en popüler yolculuk seçenekleri</h2>
+                    </div>
+                    <div class="par5">
+                        <p>Araç çağırın, araca binin ve yolculuğa başlayın.</p>
+                    </div>
+                    <div class="link-con">
+                        <div class="link1">
+                            <a href="#">Uygulamayı İndirin</a>
+                            <div class="bx1"></div>
+                        </div>
+                        <div class="link2">
+                            <a href="#">Diğer yolculuk seçeneklerine göz atın</a>
+                            <div class="bx2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-con6">
+                    <div class="card1">
+                        <div style="width: 18rem;">
+                            <img width="354px" height="199px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_443,h_249/v1597152926/assets/5b/5e35f8-a14e-41fa-9d80-c022d221c00f/original/UberX_4k-16x9.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">UberX</h3>
+                                <br>
+                                <p class="card-text">Sadece size özel, hesaplı yolculuklar</p>
+                                <br><br>
+                                <div class="cardx">
+                                    <a href="#" class="but5">Daha Fazla Bilgi</a>
+                                </div>
+                                <div class="bx6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div style="width: 18rem;">
+                            <img width="354px" height="199px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_443,h_249/v1597152913/assets/c3/497422-3775-4672-a7a9-5c6c85e74b28/original/Pool_4k-16x9.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">UberX Paylaşım</h3>
+                                <br>
+                                <p class="card-text">Aracınızı her seferinde en fazla bir yolcuyla paylaşın</p>
+                                <br><br>
+                                <div class="cardx">
+                                    <a href="#" class="but5">Daha Fazla Bilgi</a>
+                                </div>
+                                <div class="bx6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div style="width: 18rem;">
+                            <img width="354px" height="199px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_443,h_249/v1597152901/assets/f9/a62198-002f-43a4-8049-88eed2961774/original/Comfort_4k-16x9.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Uber Comfort</h3>
+                                <br>
+                                <p class="card-text">Daha fazla diz mesafesi olan daha yeni araçlar</p>
+                                <br><br>
+                                <div class="cardx">
+                                    <a href="#" class="but5">Daha Fazla Bilgi</a>
+                                </div>
+                                <div class="bx6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-con8">
+                    <div class="bx3">1/2</div>
+                    <div class="bx4">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="bx5">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box4">
+            <div class="main-con9">
+                <div class="row">
+                    <div class="card4 width-x">
+                        <div class="card-body width-x">
+                            <div class="bx7">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M12 1C6.68 1 2 3.04 2 3.04V14.94C2 19.78 7.57 22.09 12 24C16.4 22.11 22 19.8 22 14.94V3.04C22 3.04 17.5 1 12 1ZM19 14.94C19 17.33 15.91 19.01 12 20.73C7.97 18.96 5 17.34 5 14.94V5.15C6.65 4.64 9.26 4 12 4C14.83 4 17.39 4.63 19 5.14V14.94Z"
+                                        fill="black" />
+                                    <path
+                                        d="M7 6.67V14.95C7 16.1 9.7 17.51 12 18.55C14.3 17.51 17 16.1 17 14.95V6.65C15.63 6.3 13.88 6 12 6C10.17 6 8.41 6.31 7 6.67Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            <br>
+                            <h3 class="card-title width-x">Güvenlik</h3>
+                            <br>
+                            <p class="card-text width-x">Uygulamayı gönül rahatlığıyla kullanmanız için tasarladık.</p>
+                            <br><br>
+                            <div class="box4a width-x">
+                                <a href="#" class="but9">Güvenlik hakkında daha fazla bilgi edinin</a>
+                            </div>
+                            <div class="bx10 "></div>
+                        </div>
+                    </div>
+                    <div class="card5 width-x">
+                        <div class="card-body width-x">
+                            <div class="bx8  width-x">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <title>Globe (filled)</title>
+                                    <g transform="matrix(           1 0           0 1           1 1         )">
+                                        <path fill-rule="nonzero" clip-rule="nonzero"
+                                            d="M 11 0 C 4.900000095367432 0 0 4.900000095367432 0 11 C 0 17.100000381469727 4.900000095367432 22 11 22 C 17.100000381469727 22 22 17.100000381469727 22 11 C 22 4.900000095367432 17.100000381469727 0 11 0 Z M 19 11 C 19 11.699999809265137 18.899951934814453 12.399999618530273 18.699951171875 13 C 18.099950790405273 11.5 17.099950790405273 9.899988174438477 15.699951171875 8.29998779296875 L 17.5 6.5 C 18.5 7.800000190734863 19 9.300000190734863 19 11 Z M 5.5 5.5 C 6.800000190734863 5.5 9.100000381469727 6.299993991851807 11.5 8.399993896484375 L 8.300048828125 11.600006103515625 C 6.100049018859863 8.800005912780762 5.5 6.5 5.5 5.5 Z M 13.60009765625 10.5 C 15.900097846984863 13.199999809265137 16.5 15.5 16.5 16.5 C 15.199999809265137 16.5 12.899999618530273 15.700006484985352 10.5 13.600006103515625 L 13.60009765625 10.5 Z M 15.5 4.399993896484375 L 13.60009765625 6.29998779296875 C 12.000097274780273 4.899987697601318 10.39990234375 3.8999876976013184 8.89990234375 3.29998779296875 C 9.599902153015137 3.099987745285034 10.199902534484863 3 10.89990234375 3 C 12.699902534484863 3 14.199999809265137 3.4999938011169434 15.5 4.399993896484375 Z M 3 11 C 3 10.300000190734863 3.100048780441284 9.600000381469727 3.300048828125 9 C 3.9000487327575684 10.5 4.900048732757568 12.100011825561523 6.300048828125 13.70001220703125 L 4.5 15.5 C 3.5 14.199999809265137 3 12.699999809265137 3 11 Z M 6.5 17.600006103515625 L 8.39990234375 15.70001220703125 C 9.999902725219727 17.100011825561523 11.60009765625 18.100011825561523 13.10009765625 18.70001220703125 C 12.400097846984863 18.900012969970703 11.800097465515137 19 11.10009765625 19 C 9.300097465515137 19 7.800000190734863 18.5000057220459 6.5 17.600006103515625 Z"
+                                            fill="currentColor" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <br>
+                            <h3 class="card-title width-x">Şehirler</h3>
+                            <br>
+                            <p class="card-text width-x">10.000’den fazla şehirde kullanılabilir.</p>
+                            <br><br>
+                            <div class="box4b width-x">
+                                <a href="#" class="but7 width-x">Şehir bulun</a>
+                                <div class="bx11"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card6 width-x">
+                        <div class="card-body width-x">
+                            <div class="bx9 width-x">
+                                <i class="fa-solid fa-plane-departure"></i>
+                            </div>
+                            <br>
+                            <h3 class="card-title width-x">Havalimanları</h3>
+                            <br>
+                            <p class="card-text width-x">600’den fazla havalimanında yolculuk imkanı</p>
+                            <br><br>
+                            <div class="box4c width-x">
+                                <a href="#" class="but8 width-x">Tüm havalimanlarını görün</a>
+                                <div class="bx12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box5">
+            <div class="main-con10">
+                <div class="box5-con">
+                    <div class="box5-title">
+                        <h2>Talep Üzerine Yemek Teslimatı</h2>
+                    </div>
+                    <div class="box5-con1">
+                        <div class="box5-con2">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1595374125/assets/84/447053-8c9c-4957-b7f6-33b33219951f/original/UberEats.jpg"
+                                alt="">
+                            <h3>Uber Eats</h3>
+                            <br>
+                            <p>Web üzerinden veya Uber uygulamasını kullanarak en sevdiğiniz restoranlardan yemek
+                                siparişi verin. Restoranlar siparişinizi hazırlar ve yakınlardaki bir kurye siparişinizi
+                                kapınıza kadar getirir.</p>
+                            <br><br>
+                            <div class="box5a">
+                                <a class="but10" href="#">Uber Eats'i ziyaret edin</a>
+                            </div>
+                            <div class="bx13"></div>
+                        </div>
+                        <div class="box5-con3">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_698,h_465/v1597153170/assets/34/dc8a13-709b-425b-a40e-f5278c649e58/original/SCENARIO-4_RESTAURANT_FOOD-PICK-UP_0437-large-1-3_2.jpg"
+                                alt="">
+                            <h3>Restoranlar</h3>
+                            <br>
+                            <p>Uber Eats, restoranınızın işlerine gerçek bir katkı sağlar. Yemekleriniz uygulamada
+                                görünür, yeni müşteriler restoranınızı keşfeder ve düzenli müşterileriniz,
+                                yemeklerinizin keyfini daha çok çıkarır. Uber uygulamasını kullanan kuryeler, yemekleri
+                                hızlıca teslim eder ve yemeklerin kalitesinin en iyi şekilde korunmasını sağlar.</p>
+                            <br><br>
+                            <div class="box5b">
+                                <a class="but11" href="#">Uber Eats ile iş ortağı olun</a>
+                            </div>
+                            <div class="bx14"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box6">
+            <div class="main-con11">
+                <div class="box6-con">
+                    <div class="box6-title">
+                        <h2>Uber ile para kazanın</h2>
+                    </div>
+                    <div class="box6-con1">
+                        <div class="box6-con2">
+                            <div>
+                                <img width="558px" height="372px"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_523,h_349/v1597153245/assets/f3/d748e5-9df6-4841-8b9d-e3c5436412c4/original/UberIM_20079-large-1-3_2.jpg"
+                                    alt="">
+                            </div>
+                            <h3>Uber’le araç sürün</h3>
+                            <br>
+                            <p>En büyük etkin yolcu ağına sahip platformla yolda geçirdiğiniz zamanı en iyi şekilde
+                                değerlendirin.</p>
+                            <br><br>
+                            <div class="box6a">
+                                <a class="but12" href="#">Sürücü olarak kaydolun</a>
+                            </div>
+                            <div class="bx15"></div>
+                        </div>
+                        <div class="box6-con3">
+                            <div><img width="558px" height="372px"
+                                    src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_523,h_349/v1591275733/assets/78/86ebad-aef8-4e56-85e5-e379cc1e582e/original/UberIM_008570-large.jpg"
+                                    alt=""></div>
+                            <h3>Uber ile teslimat yapın
+                            </h3>
+                            <br>
+                            <p>Şehrinizi keşfederken Uber Eats uygulamasını kullanarak insanların istediği yemek
+                                siparişlerini ve diğer ürünleri teslim ederek para kazanın.</p>
+                            <br><br>
+                            <div class="box6b">
+                                <a class="but13" href="#">Teslimat yapmak için kaydolun</a>
+                            </div>
+                            <div class="bx16"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box7">
+            <div class="main-con12">
+                <div class="box7-con">
+                    <div class="box7-title">
+                        <h2>Şehirleri birlikte ileriye taşıyoruz</h2>
+                    </div>
+                    <div class="box7-con1">
+                        <div class="box7-con2">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_523,h_349/v1595448998/assets/8b/7bc009-5429-4e93-9d8e-b6eb1be366b3/original/Uber-Transit.jpg"
+                                alt="">
+                            <h3>Herkes için toplu taşıma araçlarının geliştirilmesine yardımcı oluyoruz</h3>
+                            <br>
+                            <p>Uber, dünya genelindeki şehirlerin toplu taşıma sistemlerini daha erişilebilir, adil ve
+                                verimli hale getirmesine yardımcı olmaya kararlıdır</p>
+                            <br><br>
+                            <div class="box7a">
+                                <a class="but14" href="#">Uber Transit hakkında daha fazla bilgi edinin</a>
+                            </div>
+                            <div class="bx17"></div>
+                        </div>
+                        <div class="box7-con3">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_523,h_349/v1597153358/assets/68/c3881a-6831-42df-b4a6-840691154ddf/original/UberIM_009879-large-1-3_2.jpg"
+                                alt="">
+                            <h3>İhtiyacı olan kişilerin bakım hizmetlerine erişimini sağlıyoruz</h3>
+                            <br>
+                            <p>Üyelerine ve hastalarına esnek yolculuk planlama seçenekleri sunarak sağlık hizmetlerine
+                                erişmelerini sağlamak için sağlık kuruluşlarıyla iş birliği yaptık. Sağlık çalışanları,
+                                bakım hizmeti alacak olan hastaların veya bu hizmeti verecek olan bakıcıların, bakım
+                                hizmetinin verileceği yere gidip gelebilmeleri için, yolculukları tek bir kullanıcı
+                                panelinden planlayabilir.</p>
+                            <br><br>
+                            <div class="box7b">
+                                <a class="but15" href="#">Uber Health’i ziyaret edin</a>
+                            </div>
+                            <div class="bx18"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box8">
+            <div class="main-con13">
+                <div class="box8-con">
+                    <div class="box8-title">
+                        <h2>İşletmelerin başarıya ulaşmasına yardımcı oluyoruz</h2>
+                    </div>
+                    <div class="box8-con1">
+                        <div class="box8-con2">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_628,h_419/v1595375547/assets/ec/5f2d25-1dc5-4a87-b0ac-cd7d7a8e712c/original/Uber-Freight.jpg"
+                                alt="">
+                            <h3>Uber Freight</h3>
+                            <br>
+                            <p>Uber Freight taşıyıcı firmalarla yükleyici firmaları buluşturan, ücretsiz bir
+                                uygulamadır. Yükleyici firmalar, tek bir düğmeye dokunarak, taşımak istedikleri yüklerin
+                                rezervasyonunu anında yaparlar. Sabit fiyatlandırma sayesinde ise, taşıyıcı firmalar da
+                                her zaman ne kadar ödeme alacaklarını önceden bilir.</p>
+                            <br><br>
+                            <div class="box8a">
+                                <a class="but16" href="#">Uber Freight’ı ziyaret edin</a>
+                            </div>
+                            <div class="bx19"></div>
+                        </div>
+                        <div class="box8-con3">
+                            <img width="558px" height="372px"
+                                src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_628,h_419/v1595375602/assets/b5/349be1-b1a8-4c8d-a497-d4f4f9cde6f8/original/Uber-for-Business.jpg"
+                                alt="">
+                            <h3>Uber for Business</h3>
+                            <br>
+                            <p>Uber for Business, hem çalışanlarınıza hem de müşterilerinize sunduğunuz yolculuklar
+                                için, şirketinizin karayolu ulaşımı ihtiyaçlarını yönetmenizde size kolay bir yöntem
+                                sunar. İşletmeler için oluşturulmuştur ve otomatik faturalama, gider gösterme ve
+                                raporlama özellikleriyle çalışanlarınızın yolculuk etkinliklerini net bir şekilde
+                                görebilmenizi sağlar.</p>
+                            <br><br>
+                            <div class="box8b">
+                                <a class="but17" href="#">Uber for Business’ı ziyaret edin</a>
+                            </div>
+                            <div class="bx20"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box9">
+            <div class="main-con14">
+                <div class="box9-con1">
+                    <div class="box9-1">
+                        <h2><a href="#">Yolculuk yapmak için kaydolun</a></h2>
+                    </div>
+                    <div class="box9-2">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box9-con2">
+                    <div class="box9-3">
+                        <h2><a href="#">Sürücü olarak kaydolun</a></h2>
+                    </div>
+                    <div class="box9-4">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box10">
+            <div class="box10-con">
+                <div class="p">Bu internet sayfasında sunulan içerik sadece bilgi amaçlıdır ve bulunduğunuz ülkede,
+                    bölgede ya da şehirde geçerli olmayabilir. Önceden bildirimde bulunulmaksızın değiştirilebilir ya da
+                    güncellenebilir.</div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer">
+            <div class="foot-con">
+                <div class="foot-box1">
+                    <a href="index.html">Uber</a>
+                </div>
+
+                <div class="foot-box2">
+                    <a href="#">Yardım Merkezini Ziyaret Edin</a>
+                </div>
+
+                <div class="foot-box3">
+                    <div class="foot-hid1">
+                        <div class="fbox1">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Şirket</a></li>
+                                <li><a class="frenk" href="about.html">Hakkımızda</a></li>
+                                <li><a class="frenk" href="uberofferings.html">Sunduklarımız</a></li>
+                                <li><a class="frenk" href="#">Güncel Haberler</a></li>
+                                <li><a class="frenk" href="#">Yatırımcılar</a></li>
+                                <li><a class="frenk" href="blog.html">Blog</a></li>
+                                <li><a class="frenk" href="#">Kariyer Fırsatları</a></li>
+                                <li><a class="frenk" href="#">Al</a></li>
+                                <li><a class="frenk" href="#">Hediye kartları</a></li>
+                            </form>
+                        </div>
+                        <div class="fbox2">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Ürünler</a></li>
+                                <li><a class="frenk" href="#">Yolculuk</a></li>
+                                <li><a class="frenk" href="#">Araç Sürün</a></li>
+                                <li><a class="frenk" href="#">Yemek siparişi verin</a></li>
+                                <li><a class="frenk" href="#">Uber for Business</a></li>
+                                <li><a class="frenk" href="#">Uber Freight</a></li>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="foot-hid2">
+                        <div class="fbox3">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Küresel vatandaşlık</a></li>
+                                <li><a class="frenk" href="#">Güvenlik</a></li>
+                                <li><a class="frenk" href="#">Çeşitlilik ve Kapsayıcılık</a></li>
+                            </form>
+                        </div>
+                        <div class="fbox4">
+                            <form>
+                                <li class="firsli"><a class="frenk1" href="#">Yolculuk</a></li>
+                                <li><a class="frenk" href="#">Reserve</a></li>
+                                <li><a class="frenk" href="#">Havalimanları</a></li>
+                                <li><a class="frenk" href="#">Şehirler</a></li>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="foot-box4">
+                    <div class="fbox5">
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="social1">
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="fbox6">
+                        <button class="fbut1" type="menu"> <span style="font-size: 16px;"><i
+                                    class="fa-sharp fa-solid fa-globe"></i>
+                            </span> Türkçe</button>
+
+                        <button class="fbut1" type="menu"><span style="font-size: 16px;"><i
+                                    class="fa-solid fa-location-dot"></i>
+                            </span> İstanbul </button>
+                        <div class="flocation"></div>
+                    </div>
+                </div>
+                <div class="foot-box5">
+                    <div class="fbox7">
+                        <a target="_blank"
+                            href="https://play.google.com/store/apps/details?gl=US&hl=en_US&id=com.ubercab&referrer=singular_click_id%3D5e5fd1af-3632-4b70-8855-7ee8b9b05bec">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 40">
+                                <path
+                                    d="M130 40H5c-2.8 0-5-2.2-5-5V5c0-2.8 2.2-5 5-5h125c2.8 0 5 2.2 5 5v30c0 2.8-2.2 5-5 5z" />
+                                <path
+                                    d="M130 .8c2.3 0 4.2 1.9 4.2 4.2v30c0 2.3-1.9 4.2-4.2 4.2H5C2.7 39.2.8 37.3.8 35V5C.8 2.7 2.7.8 5 .8h125m0-.8H5C2.2 0 0 2.3 0 5v30c0 2.8 2.2 5 5 5h125c2.8 0 5-2.2 5-5V5c0-2.7-2.2-5-5-5z"
+                                    fill="#a6a6a6" />
+                                <path
+                                    d="M47.4 10.2c0 .8-.2 1.5-.7 2-.6.6-1.3.9-2.2.9s-1.6-.3-2.2-.9c-.6-.6-.9-1.3-.9-2.2s.3-1.6.9-2.2c.6-.6 1.3-.9 2.2-.9.4 0 .8.1 1.2.3.4.2.7.4.9.7l-.5.5c-.4-.5-.9-.7-1.6-.7-.6 0-1.2.2-1.6.7-.5.4-.7 1-.7 1.7s.2 1.3.7 1.7 1 .7 1.6.7c.7 0 1.2-.2 1.7-.7.3-.3.5-.7.5-1.2h-2.2v-.8h2.9v.4zM52 7.7h-2.7v1.9h2.5v.7h-2.5v1.9H52v.8h-3.5V7H52v.7zm3.3 5.3h-.8V7.7h-1.7V7H57v.7h-1.7V13zm4.6 0V7h.8v6h-.8zm4.2 0h-.8V7.7h-1.7V7h4.1v.7H64l.1 5.3zm9.5-.8c-.6.6-1.3.9-2.2.9-.9 0-1.6-.3-2.2-.9-.6-.6-.9-1.3-.9-2.2s.3-1.6.9-2.2 1.3-.9 2.2-.9c.9 0 1.6.3 2.2.9s.9 1.3.9 2.2-.3 1.6-.9 2.2zm-3.8-.5c.4.4 1 .7 1.6.7s1.2-.2 1.6-.7c.4-.4.7-1 .7-1.7s-.2-1.3-.7-1.7c-.4-.4-1-.7-1.6-.7s-1.2.2-1.6.7c-.4.4-.7 1-.7 1.7s.2 1.3.7 1.7zm5.8 1.3V7h.9l2.9 4.7V7h.8v6h-.8l-3.1-4.9V13h-.7z"
+                                    fill="#fff" stroke="#fff" stroke-width=".2" stroke-miterlimit="10" />
+                                <path
+                                    d="M68.1 21.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-9.3-6.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6c1.3 0 2.4 1 2.4 2.6 0 1.5-1.1 2.6-2.4 2.6zm-11.1-5.5v1.8H52c-.1 1-.5 1.8-1 2.3-.6.6-1.6 1.3-3.3 1.3-2.7 0-4.7-2.1-4.7-4.8s2.1-4.8 4.7-4.8c1.4 0 2.5.6 3.3 1.3l1.3-1.3c-1.1-1-2.5-1.8-4.5-1.8-3.6 0-6.7 3-6.7 6.6s3.1 6.6 6.7 6.6c2 0 3.4-.6 4.6-1.9 1.2-1.2 1.6-2.9 1.6-4.2 0-.4 0-.8-.1-1.1h-6.2zm45.4 1.4c-.4-1-1.4-2.7-3.6-2.7s-4 1.7-4 4.3c0 2.4 1.8 4.3 4.2 4.3 1.9 0 3.1-1.2 3.5-1.9l-1.4-1c-.5.7-1.1 1.2-2.1 1.2s-1.6-.4-2.1-1.3l5.7-2.4-.2-.5zm-5.8 1.4c0-1.6 1.3-2.5 2.2-2.5.7 0 1.4.4 1.6.9l-3.8 1.6zM82.6 30h1.9V17.5h-1.9V30zm-3-7.3c-.5-.5-1.3-1-2.3-1-2.1 0-4.1 1.9-4.1 4.3s1.9 4.2 4.1 4.2c1 0 1.8-.5 2.2-1h.1v.6c0 1.6-.9 2.5-2.3 2.5-1.1 0-1.9-.8-2.1-1.5l-1.6.7c.5 1.1 1.7 2.5 3.8 2.5 2.2 0 4-1.3 4-4.4V22h-1.8v.7zm-2.2 5.9c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.3 1.1 2.3 2.6-1 2.6-2.3 2.6zm24.4-11.1h-4.5V30h1.9v-4.7h2.6c2.1 0 4.1-1.5 4.1-3.9s-2-3.9-4.1-3.9zm.1 6h-2.7v-4.3h2.7c1.4 0 2.2 1.2 2.2 2.1-.1 1.1-.9 2.2-2.2 2.2zm11.5-1.8c-1.4 0-2.8.6-3.3 1.9l1.7.7c.4-.7 1-.9 1.7-.9 1 0 1.9.6 2 1.6v.1c-.3-.2-1.1-.5-1.9-.5-1.8 0-3.6 1-3.6 2.8 0 1.7 1.5 2.8 3.1 2.8 1.3 0 1.9-.6 2.4-1.2h.1v1h1.8v-4.8c-.2-2.2-1.9-3.5-4-3.5zm-.2 6.9c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.3 2-1.3.8 0 1.2.2 1.7.4-.2 1.2-1.2 2-2.2 2zm10.5-6.6l-2.1 5.4h-.1l-2.2-5.4h-2l3.3 7.6-1.9 4.2h1.9l5.1-11.8h-2zm-16.8 8h1.9V17.5h-1.9V30z"
+                                    fill="#fff" />
+                                <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="21.795" y1="-152.295"
+                                    x2="5.012" y2="-135.513" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#00a0ff" />
+                                    <stop offset=".007" stop-color="#00a1ff" />
+                                    <stop offset=".26" stop-color="#00beff" />
+                                    <stop offset=".512" stop-color="#00d2ff" />
+                                    <stop offset=".76" stop-color="#00dfff" />
+                                    <stop offset="1" stop-color="#00e3ff" />
+                                </linearGradient>
+                                <path d="M10.4 7.5c-.3.3-.4.8-.4 1.4V31c0 .6.2 1.1.5 1.4l.1.1L23 20.1v-.2L10.4 7.5z"
+                                    fill="url(#a)" />
+                                <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="33.834" y1="-140.95"
+                                    x2="9.637" y2="-140.95" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#ffe000" />
+                                    <stop offset=".409" stop-color="#ffbd00" />
+                                    <stop offset=".775" stop-color="orange" />
+                                    <stop offset="1" stop-color="#ff9c00" />
+                                </linearGradient>
+                                <path d="M27 24.3l-4.1-4.1v-.3l4.1-4.1.1.1 4.9 2.8c1.4.8 1.4 2.1 0 2.9l-5 2.7z"
+                                    fill="url(#b)" />
+                                <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="24.816" y1="-138.715"
+                                    x2="2.058" y2="-115.957" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#ff3a44" />
+                                    <stop offset="1" stop-color="#c31162" />
+                                </linearGradient>
+                                <path d="M27.1 24.2L22.9 20 10.4 32.5c.5.5 1.2.5 2.1.1l14.6-8.4" fill="url(#c)" />
+                                <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="7.261" y1="-160.788"
+                                    x2="17.424" y2="-150.625" gradientTransform="translate(0 161)">
+                                    <stop offset="0" stop-color="#32a071" />
+                                    <stop offset=".069" stop-color="#2da771" />
+                                    <stop offset=".476" stop-color="#15cf74" />
+                                    <stop offset=".801" stop-color="#06e775" />
+                                    <stop offset="1" stop-color="#00f076" />
+                                </linearGradient>
+                                <path d="M27.1 15.8L12.5 7.5c-.9-.5-1.6-.4-2.1.1L22.9 20l4.2-4.2z" fill="url(#d)" />
+                                <path d="M27 24.1l-14.5 8.2c-.8.5-1.5.4-2 0l-.1.1.1.1c.5.4 1.2.5 2 0L27 24.1z"
+                                    opacity=".2" />
+                                <path
+                                    d="M10.4 32.3c-.3-.3-.4-.8-.4-1.4v.1c0 .6.2 1.1.5 1.4v-.1h-.1zm21.6-11l-5 2.8.1.1 4.9-2.8c.7-.4 1-.9 1-1.4 0 .5-.4.9-1 1.3z"
+                                    opacity=".12" />
+                                <path
+                                    d="M12.5 7.6L32 18.7c.6.4 1 .8 1 1.3 0-.5-.3-1-1-1.4l-19.5-11c-1.4-.9-2.5-.3-2.5 1.3V9c0-1.5 1.1-2.2 2.5-1.4z"
+                                    opacity=".25" fill="#fff" />
+                            </svg>
+                        </a>
+                        <a target="_blank"
+                            href="https://apps.apple.com/us/app/uber-request-a-ride/id368677368?referrer=singular_click_id%3D79f35389-7565-4bf4-b9b2-7c1e03838d37">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119.7 40">
+                                <title>Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917</title>
+                                <path
+                                    d="M110.1 0H7.5c-.7 0-1.3.1-2 .2-.6.1-1.3.3-1.9.6C3 1.1 2.5 1.5 2 2S1.1 3 .8 3.6C.5 4.2.3 4.9.2 5.5c-.1.7-.2 1.4-.2 2v24.9c0 .7.1 1.3.2 2s.3 1.3.6 1.9c.3.7.7 1.2 1.2 1.7s1 .9 1.6 1.2c.6.3 1.2.5 1.9.6.7.1 1.3.2 2 .2h104.6c.7 0 1.3-.1 2-.2s1.3-.3 1.9-.6c.6-.3 1.1-.7 1.6-1.2s.9-1 1.2-1.6c.3-.6.5-1.2.6-1.9.1-.7.2-1.3.2-2v-.9V9.5 8.4v-.9c0-.7-.1-1.3-.2-2s-.3-1.3-.6-1.9c-.6-1.2-1.6-2.2-2.8-2.8-.6-.3-1.2-.5-1.9-.6-.7-.1-1.3-.2-2-.2h-2z"
+                                    fill="#a6a6a6" />
+                                <path
+                                    d="M8.4 39.1h-.9c-.6 0-1.3-.1-1.9-.2-.6-.1-1.1-.3-1.7-.5-.5-.3-1-.6-1.4-1-.4-.4-.8-.9-1-1.4-.3-.5-.4-1.1-.5-1.7-.1-.6-.2-1.2-.2-1.9v-24-.9c0-.6.1-1.3.2-1.9.1-.5.3-1.1.6-1.6s.6-1 1-1.4c.4-.4.9-.7 1.4-1 .5-.3 1.1-.4 1.7-.5C6.3 1 6.9.9 7.6.9H112.2c.6 0 1.2.1 1.9.2.6.1 1.1.3 1.7.5 1 .5 1.9 1.4 2.4 2.4.3.5.4 1.1.5 1.6.1.6.2 1.3.2 1.9v24.9c0 .6-.1 1.2-.2 1.9-.1.6-.3 1.1-.5 1.7-.3.5-.6 1-1 1.4-.4.4-.9.8-1.4 1-.5.3-1.1.5-1.7.5-.6.1-1.2.2-1.9.2H8.4z" />
+                                <path
+                                    d="M24.8 20.3c0-1.7.9-3.3 2.4-4.2-.9-1.3-2.4-2.1-4-2.2-1.7-.2-3.3 1-4.2 1-.9 0-2.2-1-3.6-1-1.9.1-3.6 1.1-4.5 2.7-1.9 3.3-.5 8.3 1.4 11 .9 1.3 2 2.8 3.4 2.8 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.1.9 3.6.9s2.4-1.3 3.3-2.7c.7-.9 1.2-2 1.5-3.1-1.8-.6-2.9-2.4-2.9-4.3zM22 12.2c.8-1 1.2-2.2 1.1-3.5-1.2.1-2.4.7-3.2 1.7-.8.9-1.2 2.1-1.1 3.4 1.3 0 2.4-.6 3.2-1.6zM42.3 27.1h-4.7l-1.1 3.4h-2L39 18.1h2l4.5 12.4h-2l-1.2-3.4zm-4.2-1.5h3.8L40 20.1h-.1l-1.8 5.5zm17.1.4c0 2.8-1.5 4.6-3.8 4.6-1.2.1-2.3-.6-2.8-1.6v4.5h-1.9v-12h1.8V23c.6-1 1.7-1.6 2.9-1.6 2.2-.1 3.8 1.8 3.8 4.6zm-2 0c0-1.8-.9-3-2.4-3-1.4 0-2.4 1.2-2.4 3s1 3 2.4 3c1.5 0 2.4-1.2 2.4-3zm11.9 0c0 2.8-1.5 4.6-3.8 4.6-1.2.1-2.3-.6-2.8-1.6v4.5h-1.9v-12h1.8V23c.6-1 1.7-1.6 2.9-1.6 2.3-.1 3.8 1.8 3.8 4.6zm-1.9 0c0-1.8-.9-3-2.4-3-1.4 0-2.4 1.2-2.4 3s1 3 2.4 3c1.5 0 2.4-1.2 2.4-3zm8.5 1c.1 1.2 1.3 2 3 2 1.6 0 2.7-.8 2.7-1.9 0-1-.7-1.5-2.3-1.9l-1.6-.4c-2.3-.5-3.3-1.6-3.3-3.3 0-2.1 1.9-3.6 4.5-3.6s4.4 1.5 4.5 3.6h-1.9c-.1-1.2-1.1-2-2.6-2s-2.5.8-2.5 1.9c0 .9.7 1.4 2.3 1.8l1.4.3c2.5.6 3.6 1.6 3.6 3.4 0 2.3-1.8 3.8-4.8 3.8-2.8 0-4.6-1.4-4.7-3.7h1.7zm11.6-7.7v2.1H85v1.5h-1.7v5c0 .8.3 1.1 1.1 1.1h.6v1.5c-.3.1-.7.1-1 .1-1.8 0-2.5-.7-2.5-2.4V23h-1.3v-1.5h1.3v-2.1h1.8zm2.8 6.7c0-2.8 1.7-4.6 4.3-4.6 2.6 0 4.3 1.8 4.3 4.6 0 2.9-1.7 4.6-4.3 4.6-2.7 0-4.3-1.8-4.3-4.6zm6.7 0c0-2-.9-3.1-2.4-3.1S88 24 88 26s.9 3.1 2.4 3.1 2.4-1.2 2.4-3.1zm3.4-4.6H98V23c.2-1 1.2-1.7 2.2-1.6.2 0 .4 0 .6.1v1.7c-.3-.1-.6-.1-.8-.1-1 0-1.9.8-1.9 1.8v5.7h-1.9v-9.2zm13.2 6.4c-.2 1.6-1.8 2.8-3.9 2.8-2.6 0-4.3-1.8-4.3-4.6s1.6-4.7 4.2-4.7c2.5 0 4.1 1.7 4.1 4.5v.6h-6.4v.1c-.1 1.3.8 2.4 2.1 2.6h.3c.9.1 1.8-.4 2.1-1.3h1.8zm-6.3-2.7h4.5c.1-1.2-.9-2.2-2.1-2.3h-.2c-1.2 0-2.2 1-2.2 2.3z"
+                                    fill="#fff" />
+                                <g>
+                                    <path
+                                        d="M37.8 8.7c1.5-.1 2.7 1 2.8 2.4v.5c0 1.9-1 3-2.8 3h-2.2v-6l2.2.1zm-1.2 5.2h1.1c1 .1 1.9-.7 2-1.8v-.4c.1-1-.6-2-1.6-2.1h-1.5v4.3zm5.1-1.5c-.1-1.2.8-2.2 1.9-2.3 1.2-.1 2.2.8 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.3 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.8 0 1.2-.6 1.2-1.6zm6.6 2.3h-.9l-.9-3.3h-.1l-.9 3.3h-.9l-1.2-4.5h.9l.8 3.4h.1l.9-3.4h.9l.9 3.4h.1l.8-3.4h.9l-1.4 4.5zm2.3-4.5h.9v.7h.1c.2-.5.8-.8 1.3-.8.8-.1 1.5.5 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9v-4.5zm5.2-1.8h.9v6.3h-.9V8.4zm2.1 4c-.1-1.2.7-2.2 1.9-2.3 1.2-.1 2.2.7 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.4 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.7 0 1.2-.6 1.2-1.6zm1.8 1c0-.8.6-1.3 1.7-1.3l1.2-.1v-.4c0-.5-.3-.7-.9-.7-.5 0-.8.2-.9.5h-.9c.1-.8.8-1.3 1.8-1.3 1.1 0 1.8.6 1.8 1.5v3.1h-.9v-.6h-.1c-.3.5-.8.7-1.4.7-.7.1-1.4-.5-1.5-1.2.1-.1.1-.1.1-.2zm2.9-.4v-.4l-1.1.1c-.6 0-.9.3-.9.6 0 .4.4.6.8.6.6.2 1.1-.2 1.2-.9 0 .1 0 .1 0 0zm2-.6c0-1.4.7-2.3 1.9-2.3.6 0 1.1.3 1.4.8h.1V8.4h.9v6.3h-.9V14h-.1c-.3.5-.8.8-1.4.8-1.1 0-1.9-.9-1.9-2.4zm1 0c0 1 .4 1.5 1.2 1.5.8 0 1.2-.6 1.2-1.5s-.5-1.5-1.2-1.5c-.8 0-1.2.6-1.2 1.5zm6.9 0c-.1-1.2.7-2.2 1.9-2.3 1.2-.1 2.2.7 2.3 1.9v.4c.1 1.2-.7 2.2-1.9 2.3-1.2.1-2.2-.7-2.3-1.9v-.4zm3.4 0c0-1-.4-1.5-1.2-1.5-.8 0-1.2.6-1.2 1.5 0 1 .4 1.6 1.2 1.6.7 0 1.2-.6 1.2-1.6zm2.1-2.2h.9v.7h.1c.2-.5.8-.8 1.3-.8.8-.1 1.5.5 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9v-4.5zm8.8-1.1v1.1h1v.8h-1v2.3c0 .5.2.7.6.7h.3v.7h-.5c-1 0-1.4-.3-1.4-1.2V11h-.7v-.7h.7V9.1h1zm2.2-.7h.9v2.5h.1c.2-.5.8-.9 1.4-.8.8 0 1.5.6 1.6 1.4V14.7h-.9V12c0-.7-.3-1.1-1-1.1-.6 0-1.1.4-1.1 1V14.7h-.9V8.4zm9.1 5.1c-.2.8-1.1 1.4-1.9 1.3-1.1 0-2.1-.9-2.1-2v-.3c-.2-1.1.6-2.2 1.8-2.3h.3c1.3 0 2 .9 2 2.3v.3h-3.2v.1c-.1.7.4 1.2 1.1 1.3h.1c.4.1.9-.2 1.1-.5h.8zm-3.2-1.5h2.3c0-.6-.4-1.1-1-1.2h-.1c-.6.1-1.2.6-1.2 1.2z"
+                                        fill="#fff" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="foot-box6">
+                    <div class="fbox8">
+                        <p>© 2023 Uber Technologies Inc.</p>
+                    </div>
+                    <div class="fbox9">
+                        <p><a target="_blank" href="#">Gizlilik</a></p>
+                        <p><a target="_blank" href="#">Erişebilirlik</a></p>
+                        <p><a target="_blank" href="#">Hükümler ve Koşullar</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
